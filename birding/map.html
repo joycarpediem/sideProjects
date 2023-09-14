@@ -1,0 +1,3242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a38e04497a097380604c7518987d9855 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+     <div style="position: fixed; 
+                 bottom: 50px; left: 50px; width: 200px; height: 250px; 
+                 border:2px solid grey; z-index:9999; font-size:14px;
+                 background-color:white;
+                 ">
+         <p style="margin:10px;"><b>Legend</b></p>
+         <p style="margin-left: 10px;">Radius: 50</p>
+         <p style="margin-left: 10px;">Number of sites: 117</p>
+         <p style="margin-left: 10px;">Avg Species: 137</p>
+         <p style="margin-left: 10px;"><img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png"> Higher than Average</p>
+         <p style="margin-left: 10px;"><img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png"> Lower than Average</p>
+     </div>
+     
+    
+            <div class="folium-map" id="map_a38e04497a097380604c7518987d9855" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a38e04497a097380604c7518987d9855 = L.map(
+                "map_a38e04497a097380604c7518987d9855",
+                {
+                    center: [52.3730796, 4.8924534],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f13605be7130b11b53fd17be084a1f2e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var marker_e735fe6e1c9c71577548539c3681464a = L.marker(
+                [52.451825, 5.3702545],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_7e804e7f239939c1b16bb8a34eaa6abe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e735fe6e1c9c71577548539c3681464a.setIcon(icon_7e804e7f239939c1b16bb8a34eaa6abe);
+        
+    
+        var popup_d0c615410e52ead03d414a4c3b08a143 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5128ba3380de962d48be4bae7f9bca84 = $(`<div id="html_5128ba3380de962d48be4bae7f9bca84" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1010825' target='_blank'>Oostvaardersplassen</a><br>243</div>`)[0];
+                popup_d0c615410e52ead03d414a4c3b08a143.setContent(html_5128ba3380de962d48be4bae7f9bca84);
+            
+        
+
+        marker_e735fe6e1c9c71577548539c3681464a.bindPopup(popup_d0c615410e52ead03d414a4c3b08a143)
+        ;
+
+        
+    
+    
+            var marker_a65e4be413de60326f2d1ec172a99cfd = L.marker(
+                [52.1501502, 4.355571],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_513779c780dcb9b19a59cbdc87cd6438 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a65e4be413de60326f2d1ec172a99cfd.setIcon(icon_513779c780dcb9b19a59cbdc87cd6438);
+        
+    
+        var popup_18b4418a568879325bba888830b64039 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f996d2e5f90017ba4d59f525c111d973 = $(`<div id="html_f996d2e5f90017ba4d59f525c111d973" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L2231587' target='_blank'>Meijendel</a><br>238</div>`)[0];
+                popup_18b4418a568879325bba888830b64039.setContent(html_f996d2e5f90017ba4d59f525c111d973);
+            
+        
+
+        marker_a65e4be413de60326f2d1ec172a99cfd.bindPopup(popup_18b4418a568879325bba888830b64039)
+        ;
+
+        
+    
+    
+            var marker_9ce7e7d529833d14c31d60222bb4a9f7 = L.marker(
+                [52.3239044, 4.5170116],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_4dfa91bce58bbd0b0092dafbcb20eb4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9ce7e7d529833d14c31d60222bb4a9f7.setIcon(icon_4dfa91bce58bbd0b0092dafbcb20eb4b);
+        
+    
+        var popup_f835419226725d35f1002d187298fb7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bf7109a11d9e8945f6f3e85cfee512f = $(`<div id="html_8bf7109a11d9e8945f6f3e85cfee512f" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L2508540' target='_blank'>Amsterdamse Waterleidingduinen</a><br>197</div>`)[0];
+                popup_f835419226725d35f1002d187298fb7a.setContent(html_8bf7109a11d9e8945f6f3e85cfee512f);
+            
+        
+
+        marker_9ce7e7d529833d14c31d60222bb4a9f7.bindPopup(popup_f835419226725d35f1002d187298fb7a)
+        ;
+
+        
+    
+    
+            var marker_110d73037dd15edb1b5b17083068b726 = L.marker(
+                [52.4580753, 4.5382977],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_c9b834f7e179187bc1fba80b109dad80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_110d73037dd15edb1b5b17083068b726.setIcon(icon_c9b834f7e179187bc1fba80b109dad80);
+        
+    
+        var popup_3e43ae7cfb7534f2b4d642c3bc847a57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a4007796f81fb78ad6bda1634ccfadc = $(`<div id="html_1a4007796f81fb78ad6bda1634ccfadc" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L3983780' target='_blank'>IJmuiden Zuidpier</a><br>197</div>`)[0];
+                popup_3e43ae7cfb7534f2b4d642c3bc847a57.setContent(html_1a4007796f81fb78ad6bda1634ccfadc);
+            
+        
+
+        marker_110d73037dd15edb1b5b17083068b726.bindPopup(popup_3e43ae7cfb7534f2b4d642c3bc847a57)
+        ;
+
+        
+    
+    
+            var marker_0db6fc9131fbe3a57cb15b4869bb5dbf = L.marker(
+                [52.1147643, 5.1608706],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_e85a1faf112d5c23d37ea06e7e3e0012 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0db6fc9131fbe3a57cb15b4869bb5dbf.setIcon(icon_e85a1faf112d5c23d37ea06e7e3e0012);
+        
+    
+        var popup_c3461c501df82290fb5fafaff3a586de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47cfc5c67cfb414e88c014e13c572e80 = $(`<div id="html_47cfc5c67cfb414e88c014e13c572e80" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L3019480' target='_blank'>De Hooge Kampse Plas</a><br>193</div>`)[0];
+                popup_c3461c501df82290fb5fafaff3a586de.setContent(html_47cfc5c67cfb414e88c014e13c572e80);
+            
+        
+
+        marker_0db6fc9131fbe3a57cb15b4869bb5dbf.bindPopup(popup_c3461c501df82290fb5fafaff3a586de)
+        ;
+
+        
+    
+    
+            var marker_fd4bb925498202fcca7592b9f646f4f7 = L.marker(
+                [52.0999436, 4.4336065],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_339e7f3d6471c1a476d315ce0cfb7c46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fd4bb925498202fcca7592b9f646f4f7.setIcon(icon_339e7f3d6471c1a476d315ce0cfb7c46);
+        
+    
+        var popup_a35e8597b10cb95a8c98ac1a5968fe20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30a25b4bf666210dd4a03f421b553105 = $(`<div id="html_30a25b4bf666210dd4a03f421b553105" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L2233164' target='_blank'>Vogelplas Starrevaart</a><br>192</div>`)[0];
+                popup_a35e8597b10cb95a8c98ac1a5968fe20.setContent(html_30a25b4bf666210dd4a03f421b553105);
+            
+        
+
+        marker_fd4bb925498202fcca7592b9f646f4f7.bindPopup(popup_a35e8597b10cb95a8c98ac1a5968fe20)
+        ;
+
+        
+    
+    
+            var marker_fe3cdced7a9753809d4aabed4e689a5d = L.marker(
+                [52.2140825, 4.402653],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_ca32cc10c5b65f86f047b9ce84fe6d4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fe3cdced7a9753809d4aabed4e689a5d.setIcon(icon_ca32cc10c5b65f86f047b9ce84fe6d4e);
+        
+    
+        var popup_e2c2deb259e73a3e91acb488f9b0ba27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da8b1b8699939d5e467ef696201b9e3d = $(`<div id="html_da8b1b8699939d5e467ef696201b9e3d" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L4916340' target='_blank'>Katwijk aan Zee--Noordduinen</a><br>190</div>`)[0];
+                popup_e2c2deb259e73a3e91acb488f9b0ba27.setContent(html_da8b1b8699939d5e467ef696201b9e3d);
+            
+        
+
+        marker_fe3cdced7a9753809d4aabed4e689a5d.bindPopup(popup_e2c2deb259e73a3e91acb488f9b0ba27)
+        ;
+
+        
+    
+    
+            var marker_582193405413783001dd55e1049a804d = L.marker(
+                [52.4574738, 4.5603561],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_dfa134cfb780a23ff5ebcec6be884121 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_582193405413783001dd55e1049a804d.setIcon(icon_dfa134cfb780a23ff5ebcec6be884121);
+        
+    
+        var popup_b9eef5076fea315a220f268101b69773 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff0cc05b26f22000ff95c4b57c966efe = $(`<div id="html_ff0cc05b26f22000ff95c4b57c966efe" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1066455' target='_blank'>IJmuiden--Haven Gebied (Harbor Area)</a><br>189</div>`)[0];
+                popup_b9eef5076fea315a220f268101b69773.setContent(html_ff0cc05b26f22000ff95c4b57c966efe);
+            
+        
+
+        marker_582193405413783001dd55e1049a804d.bindPopup(popup_b9eef5076fea315a220f268101b69773)
+        ;
+
+        
+    
+    
+            var marker_14f6035be9a3394fc7b2adfd4fc79022 = L.marker(
+                [52.4198518, 5.2886598],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_8584ca94147f56fab81447424080d0d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_14f6035be9a3394fc7b2adfd4fc79022.setIcon(icon_8584ca94147f56fab81447424080d0d5);
+        
+    
+        var popup_ef11aa023ad23bd7d5fc075a455defaf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d64b3ae8daecae1238dd66cd670c3611 = $(`<div id="html_d64b3ae8daecae1238dd66cd670c3611" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L7882503' target='_blank'>Oostvaardersplassen--Jan van den Boschpad</a><br>188</div>`)[0];
+                popup_ef11aa023ad23bd7d5fc075a455defaf.setContent(html_d64b3ae8daecae1238dd66cd670c3611);
+            
+        
+
+        marker_14f6035be9a3394fc7b2adfd4fc79022.bindPopup(popup_ef11aa023ad23bd7d5fc075a455defaf)
+        ;
+
+        
+    
+    
+            var marker_3cbb8b41c16f9d64f334cb6589c13829 = L.marker(
+                [52.1281224, 4.3344364],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_0d8ce23a21a0e9a71db95a8c212d8bdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3cbb8b41c16f9d64f334cb6589c13829.setIcon(icon_0d8ce23a21a0e9a71db95a8c212d8bdc);
+        
+    
+        var popup_6d9ccc26c941fe8aa1394ebc0de57d37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35ee8c433729cfe91666f4504f1c8374 = $(`<div id="html_35ee8c433729cfe91666f4504f1c8374" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L3947003' target='_blank'>Meijendel</a><br>186</div>`)[0];
+                popup_6d9ccc26c941fe8aa1394ebc0de57d37.setContent(html_35ee8c433729cfe91666f4504f1c8374);
+            
+        
+
+        marker_3cbb8b41c16f9d64f334cb6589c13829.bindPopup(popup_6d9ccc26c941fe8aa1394ebc0de57d37)
+        ;
+
+        
+    
+    
+            var marker_f062375c97546f82e11e82080e8bd239 = L.marker(
+                [52.4539817, 5.4117537],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_3734bb3e9e6ca4f7f4ad05b094cfbcff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f062375c97546f82e11e82080e8bd239.setIcon(icon_3734bb3e9e6ca4f7f4ad05b094cfbcff);
+        
+    
+        var popup_7b68c9b8c1db63b84bcc9aec474ee184 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac415078b4a4432ef3f6b9cbb1a7a51a = $(`<div id="html_ac415078b4a4432ef3f6b9cbb1a7a51a" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1139936' target='_blank'>Oostvaardersplassen-Pad naar de 'Zeearend'</a><br>184</div>`)[0];
+                popup_7b68c9b8c1db63b84bcc9aec474ee184.setContent(html_ac415078b4a4432ef3f6b9cbb1a7a51a);
+            
+        
+
+        marker_f062375c97546f82e11e82080e8bd239.bindPopup(popup_7b68c9b8c1db63b84bcc9aec474ee184)
+        ;
+
+        
+    
+    
+            var marker_2f8f22b0172393cd8bbae9597a39c40c = L.marker(
+                [52.7384154, 4.6448994],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_f58105396f24ee75e25d4e731590abf6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2f8f22b0172393cd8bbae9597a39c40c.setIcon(icon_f58105396f24ee75e25d4e731590abf6);
+        
+    
+        var popup_d8e29177fceb56c8b0ac39eb4a4ba319 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60c02f0a59f258f63e721f5285d1cf4d = $(`<div id="html_60c02f0a59f258f63e721f5285d1cf4d" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L3932063' target='_blank'>Hondsbossche Zeewering</a><br>180</div>`)[0];
+                popup_d8e29177fceb56c8b0ac39eb4a4ba319.setContent(html_60c02f0a59f258f63e721f5285d1cf4d);
+            
+        
+
+        marker_2f8f22b0172393cd8bbae9597a39c40c.bindPopup(popup_d8e29177fceb56c8b0ac39eb4a4ba319)
+        ;
+
+        
+    
+    
+            var marker_4b47aa3519648922a33f5f85f8f14920 = L.marker(
+                [52.4155609, 4.5691967],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_0f9c6904c3e8636bc5591eb5fd9ace00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4b47aa3519648922a33f5f85f8f14920.setIcon(icon_0f9c6904c3e8636bc5591eb5fd9ace00);
+        
+    
+        var popup_9a929c41e97020d86eb3dd4e872b1029 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b993c042972230072dc309406782028 = $(`<div id="html_6b993c042972230072dc309406782028" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L952504' target='_blank'>Nationaal Park Zuid-Kennemerland</a><br>174</div>`)[0];
+                popup_9a929c41e97020d86eb3dd4e872b1029.setContent(html_6b993c042972230072dc309406782028);
+            
+        
+
+        marker_4b47aa3519648922a33f5f85f8f14920.bindPopup(popup_9a929c41e97020d86eb3dd4e872b1029)
+        ;
+
+        
+    
+    
+            var marker_caf9665923f1bcdb4f87a84e02c27fe0 = L.marker(
+                [52.1854573, 4.8257516],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_151cf25997872c3252409a9bf75e4853 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_caf9665923f1bcdb4f87a84e02c27fe0.setIcon(icon_151cf25997872c3252409a9bf75e4853);
+        
+    
+        var popup_0a43ca8003865b351d06453258687066 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21a05c4034fed7d714cdebcc6673af7b = $(`<div id="html_21a05c4034fed7d714cdebcc6673af7b" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1742100' target='_blank'>De Groene Jonker</a><br>173</div>`)[0];
+                popup_0a43ca8003865b351d06453258687066.setContent(html_21a05c4034fed7d714cdebcc6673af7b);
+            
+        
+
+        marker_caf9665923f1bcdb4f87a84e02c27fe0.bindPopup(popup_0a43ca8003865b351d06453258687066)
+        ;
+
+        
+    
+    
+            var marker_70ad233e32fd60841dc1e7d7c64eab60 = L.marker(
+                [52.7370751, 4.6468823],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_c5379b9ac60fe04fbada0e8bef8809c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_70ad233e32fd60841dc1e7d7c64eab60.setIcon(icon_c5379b9ac60fe04fbada0e8bef8809c0);
+        
+    
+        var popup_2e1c4aed91b9e6b9969ce762502b4827 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a1884e1c96810749cb5d0b4c2d23d96 = $(`<div id="html_0a1884e1c96810749cb5d0b4c2d23d96" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L9548507' target='_blank'>De Putten</a><br>163</div>`)[0];
+                popup_2e1c4aed91b9e6b9969ce762502b4827.setContent(html_0a1884e1c96810749cb5d0b4c2d23d96);
+            
+        
+
+        marker_70ad233e32fd60841dc1e7d7c64eab60.bindPopup(popup_2e1c4aed91b9e6b9969ce762502b4827)
+        ;
+
+        
+    
+    
+            var marker_80ee994a04f14ba6f8a10d15a6d4ec7c = L.marker(
+                [52.0675394, 4.4311321],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_b8b3a129fd6a7a9b56439861ca7acbf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_80ee994a04f14ba6f8a10d15a6d4ec7c.setIcon(icon_b8b3a129fd6a7a9b56439861ca7acbf2);
+        
+    
+        var popup_1379ab11e03316702c4f2643e62fcebf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50fcb287b5bd52b421bd80d56595b6b6 = $(`<div id="html_50fcb287b5bd52b421bd80d56595b6b6" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L11966288' target='_blank'>Driemanspolder, Zoetermeer</a><br>163</div>`)[0];
+                popup_1379ab11e03316702c4f2643e62fcebf.setContent(html_50fcb287b5bd52b421bd80d56595b6b6);
+            
+        
+
+        marker_80ee994a04f14ba6f8a10d15a6d4ec7c.bindPopup(popup_1379ab11e03316702c4f2643e62fcebf)
+        ;
+
+        
+    
+    
+            var marker_d65b889f7fd8e3869cc0c2e50e371f1c = L.marker(
+                [51.9658463, 5.1661491],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_1a352cb6b564efb1b29a2d7d7b826022 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d65b889f7fd8e3869cc0c2e50e371f1c.setIcon(icon_1a352cb6b564efb1b29a2d7d7b826022);
+        
+    
+        var popup_e9b44991e1ffbf6cd111e52c022a88cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3f67796bceef51b027ebc6dda84695b = $(`<div id="html_e3f67796bceef51b027ebc6dda84695b" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L9833771' target='_blank'>Everdingerwaard</a><br>162</div>`)[0];
+                popup_e9b44991e1ffbf6cd111e52c022a88cd.setContent(html_e3f67796bceef51b027ebc6dda84695b);
+            
+        
+
+        marker_d65b889f7fd8e3869cc0c2e50e371f1c.bindPopup(popup_e9b44991e1ffbf6cd111e52c022a88cd)
+        ;
+
+        
+    
+    
+            var marker_ddba68cdab503121f3b143f4ae4784ac = L.marker(
+                [52.4436119, 5.4090071],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_fa756bec52eb89cba594ed014af2ce00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ddba68cdab503121f3b143f4ae4784ac.setIcon(icon_fa756bec52eb89cba594ed014af2ce00);
+        
+    
+        var popup_da7a8dc5c019f7e218306d323dacd104 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a0ec4b4ad3d645bc491bc3a868f0801 = $(`<div id="html_4a0ec4b4ad3d645bc491bc3a868f0801" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L11306366' target='_blank'>Kleine Praambult</a><br>162</div>`)[0];
+                popup_da7a8dc5c019f7e218306d323dacd104.setContent(html_4a0ec4b4ad3d645bc491bc3a868f0801);
+            
+        
+
+        marker_ddba68cdab503121f3b143f4ae4784ac.bindPopup(popup_da7a8dc5c019f7e218306d323dacd104)
+        ;
+
+        
+    
+    
+            var marker_633e2c23b701ec14f9846ce33bc5d49e = L.marker(
+                [52.3440623, 5.0247031],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_ee41274009b428772270a205546c9ecd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_633e2c23b701ec14f9846ce33bc5d49e.setIcon(icon_ee41274009b428772270a205546c9ecd);
+        
+    
+        var popup_ebb4b98b9befd0d78b55aaf5e9f7881a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_197831628a9bb2ae68ab5a1ffb691af9 = $(`<div id="html_197831628a9bb2ae68ab5a1ffb691af9" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1540327' target='_blank'>Diemer Vijfhoek</a><br>161</div>`)[0];
+                popup_ebb4b98b9befd0d78b55aaf5e9f7881a.setContent(html_197831628a9bb2ae68ab5a1ffb691af9);
+            
+        
+
+        marker_633e2c23b701ec14f9846ce33bc5d49e.bindPopup(popup_ebb4b98b9befd0d78b55aaf5e9f7881a)
+        ;
+
+        
+    
+    
+            var marker_1f322c0058c64b7174f2d2f35616621d = L.marker(
+                [52.2885326, 5.1234055],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_8863de29461aebbda628eac2147bbd00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1f322c0058c64b7174f2d2f35616621d.setIcon(icon_8863de29461aebbda628eac2147bbd00);
+        
+    
+        var popup_b1ad992271d6fce951b217d597bb3005 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b352489cc7a39d1d10b3c8d4ed1248b3 = $(`<div id="html_b352489cc7a39d1d10b3c8d4ed1248b3" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L932705' target='_blank'>Naardermeer</a><br>161</div>`)[0];
+                popup_b1ad992271d6fce951b217d597bb3005.setContent(html_b352489cc7a39d1d10b3c8d4ed1248b3);
+            
+        
+
+        marker_1f322c0058c64b7174f2d2f35616621d.bindPopup(popup_b1ad992271d6fce951b217d597bb3005)
+        ;
+
+        
+    
+    
+            var marker_31e9a2eaea8d380fb4992bb861ebac00 = L.marker(
+                [52.0472649, 4.7531533],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_23c2986f7ff3595bb3d8dca9469c10f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_31e9a2eaea8d380fb4992bb861ebac00.setIcon(icon_23c2986f7ff3595bb3d8dca9469c10f4);
+        
+    
+        var popup_2c56e0caf236357e2318db2e3181ef08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1a2d10a6fb42e5199aced74be154faa = $(`<div id="html_c1a2d10a6fb42e5199aced74be154faa" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L3945951' target='_blank'>Reeuwijkse plassen</a><br>160</div>`)[0];
+                popup_2c56e0caf236357e2318db2e3181ef08.setContent(html_c1a2d10a6fb42e5199aced74be154faa);
+            
+        
+
+        marker_31e9a2eaea8d380fb4992bb861ebac00.bindPopup(popup_2c56e0caf236357e2318db2e3181ef08)
+        ;
+
+        
+    
+    
+            var marker_f82fa15765fd82f7a043b2a8e192228d = L.marker(
+                [52.4151038, 5.2213094],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_dec04762d73816e2bbee28cc744a79c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f82fa15765fd82f7a043b2a8e192228d.setIcon(icon_dec04762d73816e2bbee28cc744a79c6);
+        
+    
+        var popup_10ed13a9029e84df5a1288ae629e9a47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf7594e336e6e1cb5dee414a1e6fb3ad = $(`<div id="html_bf7594e336e6e1cb5dee414a1e6fb3ad" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1532079' target='_blank'>Lepelaarplassen</a><br>159</div>`)[0];
+                popup_10ed13a9029e84df5a1288ae629e9a47.setContent(html_bf7594e336e6e1cb5dee414a1e6fb3ad);
+            
+        
+
+        marker_f82fa15765fd82f7a043b2a8e192228d.bindPopup(popup_10ed13a9029e84df5a1288ae629e9a47)
+        ;
+
+        
+    
+    
+            var marker_b918878684cd5a600754155d14ed060e = L.marker(
+                [52.379686, 5.0101089],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_7a7305507353b213a779e85a2e377951 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b918878684cd5a600754155d14ed060e.setIcon(icon_7a7305507353b213a779e85a2e377951);
+        
+    
+        var popup_680b49e9b851e69f8f69abb6eed2256d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f680fdd02a3ada1ea94a57224c7314b5 = $(`<div id="html_f680fdd02a3ada1ea94a57224c7314b5" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L4417980' target='_blank'>Uitdammerdijk</a><br>158</div>`)[0];
+                popup_680b49e9b851e69f8f69abb6eed2256d.setContent(html_f680fdd02a3ada1ea94a57224c7314b5);
+            
+        
+
+        marker_b918878684cd5a600754155d14ed060e.bindPopup(popup_680b49e9b851e69f8f69abb6eed2256d)
+        ;
+
+        
+    
+    
+            var marker_d2e6c6236ff0d3da9eaaaa328c4c626e = L.marker(
+                [52.4573431, 5.4194355],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_5afa6225b9160a8ff84fbaa026a0e658 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d2e6c6236ff0d3da9eaaaa328c4c626e.setIcon(icon_5afa6225b9160a8ff84fbaa026a0e658);
+        
+    
+        var popup_1cd32854e962c2c8b1e2e6e57e8bd736 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_412c9c184053daf27bd90b848dfc3648 = $(`<div id="html_412c9c184053daf27bd90b848dfc3648" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L21150425' target='_blank'>Oostvaardersplassen--Bezoekerscentrum</a><br>157</div>`)[0];
+                popup_1cd32854e962c2c8b1e2e6e57e8bd736.setContent(html_412c9c184053daf27bd90b848dfc3648);
+            
+        
+
+        marker_d2e6c6236ff0d3da9eaaaa328c4c626e.bindPopup(popup_1cd32854e962c2c8b1e2e6e57e8bd736)
+        ;
+
+        
+    
+    
+            var marker_2354c961c59973d65b4c0a552d03b7f4 = L.marker(
+                [52.3728, 4.8932],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_cfc09560fd8f8d4ce0bec296b7585672 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2354c961c59973d65b4c0a552d03b7f4.setIcon(icon_cfc09560fd8f8d4ce0bec296b7585672);
+        
+    
+        var popup_1e250292bf6b33e8796c2d2811efd2c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_059abfabab3f29a41d9b1a0a286c71d9 = $(`<div id="html_059abfabab3f29a41d9b1a0a286c71d9" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1120013' target='_blank'>Amsterdam--Algemeen (Amsterdam--General Area)</a><br>156</div>`)[0];
+                popup_1e250292bf6b33e8796c2d2811efd2c1.setContent(html_059abfabab3f29a41d9b1a0a286c71d9);
+            
+        
+
+        marker_2354c961c59973d65b4c0a552d03b7f4.bindPopup(popup_1e250292bf6b33e8796c2d2811efd2c1)
+        ;
+
+        
+    
+    
+            var marker_0a301015a09bb9cd062bda03617340f8 = L.marker(
+                [52.4665683, 5.3321242],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_d43e8a8a0daea09ab69b30403a3797cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0a301015a09bb9cd062bda03617340f8.setIcon(icon_d43e8a8a0daea09ab69b30403a3797cc);
+        
+    
+        var popup_22ff2041b2648425bb4afa39500fca11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eec7cb868ac220022e49dc58505ee744 = $(`<div id="html_eec7cb868ac220022e49dc58505ee744" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1139946' target='_blank'>Oostervaarderplassen--Uitkijk het Nonnetje</a><br>156</div>`)[0];
+                popup_22ff2041b2648425bb4afa39500fca11.setContent(html_eec7cb868ac220022e49dc58505ee744);
+            
+        
+
+        marker_0a301015a09bb9cd062bda03617340f8.bindPopup(popup_22ff2041b2648425bb4afa39500fca11)
+        ;
+
+        
+    
+    
+            var marker_cadebbdc20842b73edd9cd717991dc5e = L.marker(
+                [52.4620761, 5.4174614],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_d856b283fd283d14900c669941fb9b0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cadebbdc20842b73edd9cd717991dc5e.setIcon(icon_d856b283fd283d14900c669941fb9b0d);
+        
+    
+        var popup_dd377d76cd231198d90dea626f5bf8e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3597d624023f94a85f60377914d80274 = $(`<div id="html_3597d624023f94a85f60377914d80274" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L4185283' target='_blank'>Knardijk</a><br>154</div>`)[0];
+                popup_dd377d76cd231198d90dea626f5bf8e2.setContent(html_3597d624023f94a85f60377914d80274);
+            
+        
+
+        marker_cadebbdc20842b73edd9cd717991dc5e.bindPopup(popup_dd377d76cd231198d90dea626f5bf8e2)
+        ;
+
+        
+    
+    
+            var marker_f68fdb198efd3eed100faad22e620f1a = L.marker(
+                [52.4110061, 5.3177261],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_5a61d0d9733d2c0b163bc8c4858e7f89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f68fdb198efd3eed100faad22e620f1a.setIcon(icon_5a61d0d9733d2c0b163bc8c4858e7f89);
+        
+    
+        var popup_e06d5cf0c72894dd5bc5f548a6e4d2fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0422b2e9d9b75257a8d98c4d479fb686 = $(`<div id="html_0422b2e9d9b75257a8d98c4d479fb686" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L993752' target='_blank'>Oostvaardersplassen--Zuidwestelijk hoek (SW Area)</a><br>153</div>`)[0];
+                popup_e06d5cf0c72894dd5bc5f548a6e4d2fb.setContent(html_0422b2e9d9b75257a8d98c4d479fb686);
+            
+        
+
+        marker_f68fdb198efd3eed100faad22e620f1a.bindPopup(popup_e06d5cf0c72894dd5bc5f548a6e4d2fb)
+        ;
+
+        
+    
+    
+            var marker_1c133ce76bf0d0a5c4169bc206fa5c37 = L.marker(
+                [52.427579, 5.3958813],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_298e09281afde4d98e012dee8bf94921 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1c133ce76bf0d0a5c4169bc206fa5c37.setIcon(icon_298e09281afde4d98e012dee8bf94921);
+        
+    
+        var popup_89bc9b3ed1f4ea0a07ddb8ece4bd5467 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f398e91acefc02aa74bdaf794c03bc4c = $(`<div id="html_f398e91acefc02aa74bdaf794c03bc4c" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L5210403' target='_blank'>Oostvaardersplassen--Grote Praambult</a><br>150</div>`)[0];
+                popup_89bc9b3ed1f4ea0a07ddb8ece4bd5467.setContent(html_f398e91acefc02aa74bdaf794c03bc4c);
+            
+        
+
+        marker_1c133ce76bf0d0a5c4169bc206fa5c37.bindPopup(popup_89bc9b3ed1f4ea0a07ddb8ece4bd5467)
+        ;
+
+        
+    
+    
+            var marker_421fa77dcd58a6da946104ee5e04f768 = L.marker(
+                [52.4145541, 4.5717505],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_c7a2f4ab3114f3dc6b067eb0ee70bd92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_421fa77dcd58a6da946104ee5e04f768.setIcon(icon_c7a2f4ab3114f3dc6b067eb0ee70bd92);
+        
+    
+        var popup_8898f2dbe74ad7687edb2278e4e3a55c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00cf17f32fbca26aa578d5d3d8ea529b = $(`<div id="html_00cf17f32fbca26aa578d5d3d8ea529b" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L9754964' target='_blank'>Nationaal Park Zuid-Kennemerland--Vogelmeer</a><br>148</div>`)[0];
+                popup_8898f2dbe74ad7687edb2278e4e3a55c.setContent(html_00cf17f32fbca26aa578d5d3d8ea529b);
+            
+        
+
+        marker_421fa77dcd58a6da946104ee5e04f768.bindPopup(popup_8898f2dbe74ad7687edb2278e4e3a55c)
+        ;
+
+        
+    
+    
+            var marker_d8f9f0c033e8500b81c9f3dbc1fe736f = L.marker(
+                [52.4747052, 5.4074192],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_a49bc330c7be078c03a9bb37e3cda000 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d8f9f0c033e8500b81c9f3dbc1fe736f.setIcon(icon_a49bc330c7be078c03a9bb37e3cda000);
+        
+    
+        var popup_a7bf92bf9e8e871f5ceccd4bfc99fbd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5c593a223ae0b069abfd0bd41aed26b = $(`<div id="html_c5c593a223ae0b069abfd0bd41aed26b" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1139943' target='_blank'>Oostvaardersplassen--Pad naar de 'Grauwe Gans''</a><br>148</div>`)[0];
+                popup_a7bf92bf9e8e871f5ceccd4bfc99fbd4.setContent(html_c5c593a223ae0b069abfd0bd41aed26b);
+            
+        
+
+        marker_d8f9f0c033e8500b81c9f3dbc1fe736f.bindPopup(popup_a7bf92bf9e8e871f5ceccd4bfc99fbd4)
+        ;
+
+        
+    
+    
+            var marker_2f4d4e75ddc2c473025dfb002ff68fc9 = L.marker(
+                [52.4469863, 5.4158521],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_9760ae87be144c67280b47fa86602808 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2f4d4e75ddc2c473025dfb002ff68fc9.setIcon(icon_9760ae87be144c67280b47fa86602808);
+        
+    
+        var popup_2313c4fa527ad00ce0fb63731ceaf0fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f27d55ddf791aa00041fced4394bc29 = $(`<div id="html_8f27d55ddf791aa00041fced4394bc29" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L5866520' target='_blank'>Oostvaardersveld</a><br>148</div>`)[0];
+                popup_2313c4fa527ad00ce0fb63731ceaf0fa.setContent(html_8f27d55ddf791aa00041fced4394bc29);
+            
+        
+
+        marker_2f4d4e75ddc2c473025dfb002ff68fc9.bindPopup(popup_2313c4fa527ad00ce0fb63731ceaf0fa)
+        ;
+
+        
+    
+    
+            var marker_91364262c72101412d528e3a3f0b23ef = L.marker(
+                [52.3579375, 4.867512],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_258a853baf0031a89a9acd9232390976 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_91364262c72101412d528e3a3f0b23ef.setIcon(icon_258a853baf0031a89a9acd9232390976);
+        
+    
+        var popup_73e443be2b28eb83e91aa24145502fdf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a63d3e0270ace351e9c2d4d44b0b24c = $(`<div id="html_5a63d3e0270ace351e9c2d4d44b0b24c" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L930436' target='_blank'>Vondelpark</a><br>148</div>`)[0];
+                popup_73e443be2b28eb83e91aa24145502fdf.setContent(html_5a63d3e0270ace351e9c2d4d44b0b24c);
+            
+        
+
+        marker_91364262c72101412d528e3a3f0b23ef.bindPopup(popup_73e443be2b28eb83e91aa24145502fdf)
+        ;
+
+        
+    
+    
+            var marker_694a02f4c7da646f9bbd2ef4e0c8a1e2 = L.marker(
+                [52.3691013, 5.5913544],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_68d57b2dec500aef0cb9737a0ed64bb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_694a02f4c7da646f9bbd2ef4e0c8a1e2.setIcon(icon_68d57b2dec500aef0cb9737a0ed64bb0);
+        
+    
+        var popup_96d08a8a2bc269b477e37a5fddf6e3c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc09a2ef0958948055f3a9edfb354158 = $(`<div id="html_fc09a2ef0958948055f3a9edfb354158" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1029594' target='_blank'>Harderbroek</a><br>146</div>`)[0];
+                popup_96d08a8a2bc269b477e37a5fddf6e3c7.setContent(html_fc09a2ef0958948055f3a9edfb354158);
+            
+        
+
+        marker_694a02f4c7da646f9bbd2ef4e0c8a1e2.bindPopup(popup_96d08a8a2bc269b477e37a5fddf6e3c7)
+        ;
+
+        
+    
+    
+            var marker_e10e06f876807f788b4ba12331cd15ad = L.marker(
+                [52.4747951, 5.4069686],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_b67da9618b09b07bfea995959ea19072 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e10e06f876807f788b4ba12331cd15ad.setIcon(icon_b67da9618b09b07bfea995959ea19072);
+        
+    
+        var popup_e238d41e165f88a30df182025e6cfbfd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_245946125a7bdac06f309f75cff942fe = $(`<div id="html_245946125a7bdac06f309f75cff942fe" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L9556109' target='_blank'>Vogelkijkhut De Grauwe Gans</a><br>146</div>`)[0];
+                popup_e238d41e165f88a30df182025e6cfbfd.setContent(html_245946125a7bdac06f309f75cff942fe);
+            
+        
+
+        marker_e10e06f876807f788b4ba12331cd15ad.bindPopup(popup_e238d41e165f88a30df182025e6cfbfd)
+        ;
+
+        
+    
+    
+            var marker_9d55e5e644e89c4cce2739f1eecf405b = L.marker(
+                [52.0726842, 5.2775574],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_c527a3aa242f73c1894c6e2a25c54f84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9d55e5e644e89c4cce2739f1eecf405b.setIcon(icon_c527a3aa242f73c1894c6e2a25c54f84);
+        
+    
+        var popup_e28f5b027de70cf9b2b3d63f5538a3b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31d5d843d263cf3ad9a963230e2e8faf = $(`<div id="html_31d5d843d263cf3ad9a963230e2e8faf" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L3019502' target='_blank'>Heidestein (Het Utrechts Landschap)</a><br>144</div>`)[0];
+                popup_e28f5b027de70cf9b2b3d63f5538a3b9.setContent(html_31d5d843d263cf3ad9a963230e2e8faf);
+            
+        
+
+        marker_9d55e5e644e89c4cce2739f1eecf405b.bindPopup(popup_e28f5b027de70cf9b2b3d63f5538a3b9)
+        ;
+
+        
+    
+    
+            var marker_9ebcc34e231e62c1a9657053add71757 = L.marker(
+                [52.3680794, 5.5623865],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_2a8c78ded936da551deecd4d26133372 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9ebcc34e231e62c1a9657053add71757.setIcon(icon_2a8c78ded936da551deecd4d26133372);
+        
+    
+        var popup_5643fe2587ec5ab9dbd92bcef877fcb9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0890a5e96d794af87c249cd91e69f515 = $(`<div id="html_0890a5e96d794af87c249cd91e69f515" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L4185275' target='_blank'>Knardijk</a><br>144</div>`)[0];
+                popup_5643fe2587ec5ab9dbd92bcef877fcb9.setContent(html_0890a5e96d794af87c249cd91e69f515);
+            
+        
+
+        marker_9ebcc34e231e62c1a9657053add71757.bindPopup(popup_5643fe2587ec5ab9dbd92bcef877fcb9)
+        ;
+
+        
+    
+    
+            var marker_20d811baa91f4b89b72d613c7656efd2 = L.marker(
+                [51.9480375, 4.9895703],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_7c68421a3e941a3931017680397cb2e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_20d811baa91f4b89b72d613c7656efd2.setIcon(icon_7c68421a3e941a3931017680397cb2e1);
+        
+    
+        var popup_d87b50685a9e928fa3a8fdfb2b0ba119 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_699a76350770018988f610da773ca9c6 = $(`<div id="html_699a76350770018988f610da773ca9c6" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L5891322' target='_blank'>Zouweboezem--Zouwendijk</a><br>144</div>`)[0];
+                popup_d87b50685a9e928fa3a8fdfb2b0ba119.setContent(html_699a76350770018988f610da773ca9c6);
+            
+        
+
+        marker_20d811baa91f4b89b72d613c7656efd2.bindPopup(popup_d87b50685a9e928fa3a8fdfb2b0ba119)
+        ;
+
+        
+    
+    
+            var marker_d9e0fecbe62ef2bf8edc4ddb24fa6634 = L.marker(
+                [52.535395, 4.6300965],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_1c655d1739e4784006a563ac0b595525 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d9e0fecbe62ef2bf8edc4ddb24fa6634.setIcon(icon_1c655d1739e4784006a563ac0b595525);
+        
+    
+        var popup_d69feee1e928934e41328e610c6784d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d10921c2487170f0252854d406c68058 = $(`<div id="html_d10921c2487170f0252854d406c68058" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L9103800' target='_blank'>Noordhollands Duinreservaat</a><br>143</div>`)[0];
+                popup_d69feee1e928934e41328e610c6784d3.setContent(html_d10921c2487170f0252854d406c68058);
+            
+        
+
+        marker_d9e0fecbe62ef2bf8edc4ddb24fa6634.bindPopup(popup_d69feee1e928934e41328e610c6784d3)
+        ;
+
+        
+    
+    
+            var marker_c30ea05d9a15ff7e5e19fe7a422a4143 = L.marker(
+                [52.4874619, 5.3864292],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_d01ca16d916995dae83058f1205480b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c30ea05d9a15ff7e5e19fe7a422a4143.setIcon(icon_d01ca16d916995dae83058f1205480b2);
+        
+    
+        var popup_1a74f9289bbdc14bb1229ac967077da9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9e2d76960765cdb64c6a6289bbb1ada = $(`<div id="html_a9e2d76960765cdb64c6a6289bbb1ada" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L5208605' target='_blank'>Oostvaardersplassen--De Grote Zilverreiger</a><br>142</div>`)[0];
+                popup_1a74f9289bbdc14bb1229ac967077da9.setContent(html_a9e2d76960765cdb64c6a6289bbb1ada);
+            
+        
+
+        marker_c30ea05d9a15ff7e5e19fe7a422a4143.bindPopup(popup_1a74f9289bbdc14bb1229ac967077da9)
+        ;
+
+        
+    
+    
+            var marker_e1bdfec68a9dc78a7ba940c8b783db7e = L.marker(
+                [52.2474297, 4.9088663],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_8990b4c028b3ac46c65366558636a29a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e1bdfec68a9dc78a7ba940c8b783db7e.setIcon(icon_8990b4c028b3ac46c65366558636a29a);
+        
+    
+        var popup_1f949616735b2dc2d44e2080f1a0771d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9147b30a2f2e6eb17fcfd4c95c04295 = $(`<div id="html_e9147b30a2f2e6eb17fcfd4c95c04295" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L2197315' target='_blank'>Polder Groot-Mijdrecht</a><br>142</div>`)[0];
+                popup_1f949616735b2dc2d44e2080f1a0771d.setContent(html_e9147b30a2f2e6eb17fcfd4c95c04295);
+            
+        
+
+        marker_e1bdfec68a9dc78a7ba940c8b783db7e.bindPopup(popup_1f949616735b2dc2d44e2080f1a0771d)
+        ;
+
+        
+    
+    
+            var marker_49b1a0409b04bb0626dd7988a3e9528e = L.marker(
+                [52.401505, 5.185129],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_8f8647e995c4f1ed3570a683d05c59c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_49b1a0409b04bb0626dd7988a3e9528e.setIcon(icon_8f8647e995c4f1ed3570a683d05c59c9);
+        
+    
+        var popup_e71de967059bc8bc9802d3e2f11e996b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a6ad42a91ee58cdd162daff46cbf25e = $(`<div id="html_6a6ad42a91ee58cdd162daff46cbf25e" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L8954972' target='_blank'>Lepelaarplassen--Natte Graslanden</a><br>141</div>`)[0];
+                popup_e71de967059bc8bc9802d3e2f11e996b.setContent(html_6a6ad42a91ee58cdd162daff46cbf25e);
+            
+        
+
+        marker_49b1a0409b04bb0626dd7988a3e9528e.bindPopup(popup_e71de967059bc8bc9802d3e2f11e996b)
+        ;
+
+        
+    
+    
+            var marker_e02cc1b4604b47ec0145035f1568bd86 = L.marker(
+                [52.0070232, 4.8991728],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_ce05cfb38c675ba5d7d0ba6ab3eade34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e02cc1b4604b47ec0145035f1568bd86.setIcon(icon_ce05cfb38c675ba5d7d0ba6ab3eade34);
+        
+    
+        var popup_d8652ae63b782c9b11fe3c51ce1d0c5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd4d221586296f3c08280d8f1398b9db = $(`<div id="html_cd4d221586296f3c08280d8f1398b9db" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L6990575' target='_blank'>Natuurontwikkelingsgebied Willeskop</a><br>141</div>`)[0];
+                popup_d8652ae63b782c9b11fe3c51ce1d0c5e.setContent(html_cd4d221586296f3c08280d8f1398b9db);
+            
+        
+
+        marker_e02cc1b4604b47ec0145035f1568bd86.bindPopup(popup_d8652ae63b782c9b11fe3c51ce1d0c5e)
+        ;
+
+        
+    
+    
+            var marker_410e5c54c057d2725f219bff43cccbe9 = L.marker(
+                [52.4515634, 5.4008853],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_e4826e9e45ee30a71ef72effec2bda5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_410e5c54c057d2725f219bff43cccbe9.setIcon(icon_e4826e9e45ee30a71ef72effec2bda5f);
+        
+    
+        var popup_28fd5b6df08a9311a1ff5b29ed036b9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14f35a0c27a35d6a080957f885539bce = $(`<div id="html_14f35a0c27a35d6a080957f885539bce" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L6359955' target='_blank'>Vogelhut de Zeearend</a><br>140</div>`)[0];
+                popup_28fd5b6df08a9311a1ff5b29ed036b9d.setContent(html_14f35a0c27a35d6a080957f885539bce);
+            
+        
+
+        marker_410e5c54c057d2725f219bff43cccbe9.bindPopup(popup_28fd5b6df08a9311a1ff5b29ed036b9d)
+        ;
+
+        
+    
+    
+            var marker_e2ec8544db67a2041e3f5b75400a6d44 = L.marker(
+                [51.9849198, 4.5656294],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_e14bf43abf8dc7a08f7baba9544f38c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e2ec8544db67a2041e3f5b75400a6d44.setIcon(icon_e14bf43abf8dc7a08f7baba9544f38c8);
+        
+    
+        var popup_8e62908a28397883f4d9dc6464db62a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1589a213653ba7ba1e63e7e3239abd16 = $(`<div id="html_1589a213653ba7ba1e63e7e3239abd16" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L4683789' target='_blank'>Zevenhuizerplas -- Populierenbosje</a><br>140</div>`)[0];
+                popup_8e62908a28397883f4d9dc6464db62a9.setContent(html_1589a213653ba7ba1e63e7e3239abd16);
+            
+        
+
+        marker_e2ec8544db67a2041e3f5b75400a6d44.bindPopup(popup_8e62908a28397883f4d9dc6464db62a9)
+        ;
+
+        
+    
+    
+            var marker_f7d9a6b572ed03084cdc2d3256691013 = L.marker(
+                [52.1648425, 4.3613899],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_9f4de02a74febbf0f20aeaa5b88e058c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f7d9a6b572ed03084cdc2d3256691013.setIcon(icon_9f4de02a74febbf0f20aeaa5b88e058c);
+        
+    
+        var popup_4746cbe9ba900f98dfaaeedad2ede325 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1bd09558feb3305433ea79f5fa620917 = $(`<div id="html_1bd09558feb3305433ea79f5fa620917" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L4577982' target='_blank'>Telpost Berkheide</a><br>139</div>`)[0];
+                popup_4746cbe9ba900f98dfaaeedad2ede325.setContent(html_1bd09558feb3305433ea79f5fa620917);
+            
+        
+
+        marker_f7d9a6b572ed03084cdc2d3256691013.bindPopup(popup_4746cbe9ba900f98dfaaeedad2ede325)
+        ;
+
+        
+    
+    
+            var marker_0fc606c8f2cff4d5890b3d642668b370 = L.marker(
+                [52.5834917, 5.36661],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_462d57143f20a2ee1fa0357c04a19fc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0fc606c8f2cff4d5890b3d642668b370.setIcon(icon_462d57143f20a2ee1fa0357c04a19fc9);
+        
+    
+        var popup_c3985945ab9fca9749b14ffdae61f7b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d23ff5afc580cb5b7c3450dec822f75c = $(`<div id="html_d23ff5afc580cb5b7c3450dec822f75c" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L8023439' target='_blank'>Marker Wadden</a><br>138</div>`)[0];
+                popup_c3985945ab9fca9749b14ffdae61f7b6.setContent(html_d23ff5afc580cb5b7c3450dec822f75c);
+            
+        
+
+        marker_0fc606c8f2cff4d5890b3d642668b370.bindPopup(popup_c3985945ab9fca9749b14ffdae61f7b6)
+        ;
+
+        
+    
+    
+            var marker_3072df4232cf5c17d78a4df322fccb2b = L.marker(
+                [52.2716502, 5.2940369],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_99cbb87288e32ba7385fc0dcf8488abf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3072df4232cf5c17d78a4df322fccb2b.setIcon(icon_99cbb87288e32ba7385fc0dcf8488abf);
+        
+    
+        var popup_ea9031f6566f7fd19967bf49a3f66b4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5102b742b7ebb5a703c0c56e446245bc = $(`<div id="html_5102b742b7ebb5a703c0c56e446245bc" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L4450907' target='_blank'>Eempolders -- Weidevogelreservaat</a><br>137</div>`)[0];
+                popup_ea9031f6566f7fd19967bf49a3f66b4a.setContent(html_5102b742b7ebb5a703c0c56e446245bc);
+            
+        
+
+        marker_3072df4232cf5c17d78a4df322fccb2b.bindPopup(popup_ea9031f6566f7fd19967bf49a3f66b4a)
+        ;
+
+        
+    
+    
+            var marker_ded9a703af8a0a5c2ebaaceee0fce501 = L.marker(
+                [52.4475536, 4.8944979],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_bf0809906a4a294637fee2de89122718 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ded9a703af8a0a5c2ebaaceee0fce501.setIcon(icon_bf0809906a4a294637fee2de89122718);
+        
+    
+        var popup_324175295d158eb049c885ca87e82814 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93d690093bdfbf7463c248942d78265e = $(`<div id="html_93d690093bdfbf7463c248942d78265e" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1534518' target='_blank'>Het Twiske</a><br>136</div>`)[0];
+                popup_324175295d158eb049c885ca87e82814.setContent(html_93d690093bdfbf7463c248942d78265e);
+            
+        
+
+        marker_ded9a703af8a0a5c2ebaaceee0fce501.bindPopup(popup_324175295d158eb049c885ca87e82814)
+        ;
+
+        
+    
+    
+            var marker_1924f27814940976d80f402bfb3840d5 = L.marker(
+                [52.4124358, 5.1980567],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_a40aae09a84199c0cb7ee4004b16d8de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1924f27814940976d80f402bfb3840d5.setIcon(icon_a40aae09a84199c0cb7ee4004b16d8de);
+        
+    
+        var popup_16abc24e69cc6c94598224906eadf984 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba4aa50ec9f80996335268821cce40ab = $(`<div id="html_ba4aa50ec9f80996335268821cce40ab" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1140034' target='_blank'>Lepelaarplassen--Kwelplas</a><br>136</div>`)[0];
+                popup_16abc24e69cc6c94598224906eadf984.setContent(html_ba4aa50ec9f80996335268821cce40ab);
+            
+        
+
+        marker_1924f27814940976d80f402bfb3840d5.bindPopup(popup_16abc24e69cc6c94598224906eadf984)
+        ;
+
+        
+    
+    
+            var marker_51929d6ef0a2d357c601bb2dbec45558 = L.marker(
+                [52.3084786, 4.7790527],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_0cb53d39e1e2477d4a37b476bace2b79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_51929d6ef0a2d357c601bb2dbec45558.setIcon(icon_0cb53d39e1e2477d4a37b476bace2b79);
+        
+    
+        var popup_0cac6336cfdd2208a14a380606697277 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e75b79fa4fd77296baea3f6bf1cc99d7 = $(`<div id="html_e75b79fa4fd77296baea3f6bf1cc99d7" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L2913932' target='_blank'>Amsterdam--Schipol Airport</a><br>135</div>`)[0];
+                popup_0cac6336cfdd2208a14a380606697277.setContent(html_e75b79fa4fd77296baea3f6bf1cc99d7);
+            
+        
+
+        marker_51929d6ef0a2d357c601bb2dbec45558.bindPopup(popup_0cac6336cfdd2208a14a380606697277)
+        ;
+
+        
+    
+    
+            var marker_f6fc21140a29bf6de3d727b49626b95f = L.marker(
+                [52.1666357, 4.3924928],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_33a5b5d35d04d57871bd8d65b348f39e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f6fc21140a29bf6de3d727b49626b95f.setIcon(icon_33a5b5d35d04d57871bd8d65b348f39e);
+        
+    
+        var popup_89ae2b0a1ec48439d6cda13e04839a26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54112ee10ee411d68ec0600d32aee79c = $(`<div id="html_54112ee10ee411d68ec0600d32aee79c" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L5092779' target='_blank'>Lentevreugd</a><br>135</div>`)[0];
+                popup_89ae2b0a1ec48439d6cda13e04839a26.setContent(html_54112ee10ee411d68ec0600d32aee79c);
+            
+        
+
+        marker_f6fc21140a29bf6de3d727b49626b95f.bindPopup(popup_89ae2b0a1ec48439d6cda13e04839a26)
+        ;
+
+        
+    
+    
+            var marker_abe11e3541163039dd63ee200787579b = L.marker(
+                [52.2457832, 5.454905],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_6a899a913b09d536256aab950649cf38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_abe11e3541163039dd63ee200787579b.setIcon(icon_6a899a913b09d536256aab950649cf38);
+        
+    
+        var popup_9be0ad345b631f677835eee96b8bdf2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e95ded5c3e43990327761e2cf94677e = $(`<div id="html_5e95ded5c3e43990327761e2cf94677e" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L4699386' target='_blank'>Polder Arkenheem</a><br>135</div>`)[0];
+                popup_9be0ad345b631f677835eee96b8bdf2d.setContent(html_5e95ded5c3e43990327761e2cf94677e);
+            
+        
+
+        marker_abe11e3541163039dd63ee200787579b.bindPopup(popup_9be0ad345b631f677835eee96b8bdf2d)
+        ;
+
+        
+    
+    
+            var marker_85fc0ab76ff95965b983d7d5ea51fa39 = L.marker(
+                [51.9555197, 4.9891984],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_cddbbbe5f079bcdf67a8f48978493be6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_85fc0ab76ff95965b983d7d5ea51fa39.setIcon(icon_cddbbbe5f079bcdf67a8f48978493be6);
+        
+    
+        var popup_fe1261b55c47ca3a3b5a7cece61e8eda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0a04e40b4cd47b28f2a8543c67e70f7 = $(`<div id="html_d0a04e40b4cd47b28f2a8543c67e70f7" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L6452981' target='_blank'>Zouweboezem</a><br>135</div>`)[0];
+                popup_fe1261b55c47ca3a3b5a7cece61e8eda.setContent(html_d0a04e40b4cd47b28f2a8543c67e70f7);
+            
+        
+
+        marker_85fc0ab76ff95965b983d7d5ea51fa39.bindPopup(popup_fe1261b55c47ca3a3b5a7cece61e8eda)
+        ;
+
+        
+    
+    
+            var marker_d526a39c44333b55a3f6f3b5cdff6a85 = L.marker(
+                [52.4188955, 4.7117401],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_3d8d6315f27942eb4e2d0ff32223682e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d526a39c44333b55a3f6f3b5cdff6a85.setIcon(icon_3d8d6315f27942eb4e2d0ff32223682e);
+        
+    
+        var popup_999b9bc11dfdfbc187f647df8d2a3f92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_008338aca80df8909275b0f4cd44e214 = $(`<div id="html_008338aca80df8909275b0f4cd44e214" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L7972748' target='_blank'>Spaarndam--Westhoffplas</a><br>134</div>`)[0];
+                popup_999b9bc11dfdfbc187f647df8d2a3f92.setContent(html_008338aca80df8909275b0f4cd44e214);
+            
+        
+
+        marker_d526a39c44333b55a3f6f3b5cdff6a85.bindPopup(popup_999b9bc11dfdfbc187f647df8d2a3f92)
+        ;
+
+        
+    
+    
+            var marker_392d1a18145c673357c1d582cc0948c8 = L.marker(
+                [52.2648203, 5.5045564],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_b84cd03736e572b0661ec10e6fb0b9e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_392d1a18145c673357c1d582cc0948c8.setIcon(icon_b84cd03736e572b0661ec10e6fb0b9e8);
+        
+    
+        var popup_d307526f783281d6a834e988401447d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d387ac26f820fbc6449672a50169d7a = $(`<div id="html_5d387ac26f820fbc6449672a50169d7a" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L14213158' target='_blank'>Arkemheense Polder</a><br>132</div>`)[0];
+                popup_d307526f783281d6a834e988401447d0.setContent(html_5d387ac26f820fbc6449672a50169d7a);
+            
+        
+
+        marker_392d1a18145c673357c1d582cc0948c8.bindPopup(popup_d307526f783281d6a834e988401447d0)
+        ;
+
+        
+    
+    
+            var marker_db19f04b84bb50d5582f3c6747a489d6 = L.marker(
+                [52.4841274, 5.5368059],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_eb4b186d02a373537f980d25bd98b8b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_db19f04b84bb50d5582f3c6747a489d6.setIcon(icon_eb4b186d02a373537f980d25bd98b8b3);
+        
+    
+        var popup_174e3595f0e7e329300dc257ce0bac21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e6b2f67100328d674cc841e70c8cb72 = $(`<div id="html_9e6b2f67100328d674cc841e70c8cb72" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L15161354' target='_blank'>Natuurpark Lelystad</a><br>132</div>`)[0];
+                popup_174e3595f0e7e329300dc257ce0bac21.setContent(html_9e6b2f67100328d674cc841e70c8cb72);
+            
+        
+
+        marker_db19f04b84bb50d5582f3c6747a489d6.bindPopup(popup_174e3595f0e7e329300dc257ce0bac21)
+        ;
+
+        
+    
+    
+            var marker_f7716765f9db71411432f2a23cf1bd46 = L.marker(
+                [52.3132319, 4.8274656],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_7d5c567ff743509bdc751c7cb60c4c6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f7716765f9db71411432f2a23cf1bd46.setIcon(icon_7d5c567ff743509bdc751c7cb60c4c6b);
+        
+    
+        var popup_b03de343a3ef82c5c5bc7671c13a926a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d573cdde71d0150d2c833e5e67bfb1b = $(`<div id="html_0d573cdde71d0150d2c833e5e67bfb1b" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1832842' target='_blank'>Amsterdamse Bos</a><br>130</div>`)[0];
+                popup_b03de343a3ef82c5c5bc7671c13a926a.setContent(html_0d573cdde71d0150d2c833e5e67bfb1b);
+            
+        
+
+        marker_f7716765f9db71411432f2a23cf1bd46.bindPopup(popup_b03de343a3ef82c5c5bc7671c13a926a)
+        ;
+
+        
+    
+    
+            var marker_ecee2bf1da1785c83e117b4c71baf8dd = L.marker(
+                [52.2594635, 5.4791951],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_a3ad5296e44f1466f37c77c17d3be095 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ecee2bf1da1785c83e117b4c71baf8dd.setIcon(icon_a3ad5296e44f1466f37c77c17d3be095);
+        
+    
+        var popup_183d2f6b3832dde6dc75800a31850824 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d37c7ce4d30a70bd72fcb88100c00a6 = $(`<div id="html_2d37c7ce4d30a70bd72fcb88100c00a6" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L2512420' target='_blank'>Nuldernauw</a><br>130</div>`)[0];
+                popup_183d2f6b3832dde6dc75800a31850824.setContent(html_2d37c7ce4d30a70bd72fcb88100c00a6);
+            
+        
+
+        marker_ecee2bf1da1785c83e117b4c71baf8dd.bindPopup(popup_183d2f6b3832dde6dc75800a31850824)
+        ;
+
+        
+    
+    
+            var marker_b5757137985bddb0c2f6cc917e6eb01a = L.marker(
+                [51.9951207, 4.7870189],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_0bf240a9a670efd1688287f0b7180776 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b5757137985bddb0c2f6cc917e6eb01a.setIcon(icon_0bf240a9a670efd1688287f0b7180776);
+        
+    
+        var popup_e1c2f11f64cf3683c6f93cc79a72eaf8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e376002329b4eb2d0e90f10c69822e1 = $(`<div id="html_0e376002329b4eb2d0e90f10c69822e1" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L4678605' target='_blank'>Haastrecht -- Het Doove Gat</a><br>129</div>`)[0];
+                popup_e1c2f11f64cf3683c6f93cc79a72eaf8.setContent(html_0e376002329b4eb2d0e90f10c69822e1);
+            
+        
+
+        marker_b5757137985bddb0c2f6cc917e6eb01a.bindPopup(popup_e1c2f11f64cf3683c6f93cc79a72eaf8)
+        ;
+
+        
+    
+    
+            var marker_376596c9f71d7c742da07063dd20112e = L.marker(
+                [52.3487632, 5.2700043],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_a7c21fe6c15d8fce7020cbf160d03f45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_376596c9f71d7c742da07063dd20112e.setIcon(icon_a7c21fe6c15d8fce7020cbf160d03f45);
+        
+    
+        var popup_e270512cb3cd045d2d03c59c4cfa94ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd53bd82ab0913ccff9788aefbba1518 = $(`<div id="html_cd53bd82ab0913ccff9788aefbba1518" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1029605' target='_blank'>Flevoland--West</a><br>128</div>`)[0];
+                popup_e270512cb3cd045d2d03c59c4cfa94ec.setContent(html_cd53bd82ab0913ccff9788aefbba1518);
+            
+        
+
+        marker_376596c9f71d7c742da07063dd20112e.bindPopup(popup_e270512cb3cd045d2d03c59c4cfa94ec)
+        ;
+
+        
+    
+    
+            var marker_58aac15f66f914ff797775dbf95fba4f = L.marker(
+                [52.3544739, 4.8962545],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_dc933717946ab1325d87e69c77dd851d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_58aac15f66f914ff797775dbf95fba4f.setIcon(icon_dc933717946ab1325d87e69c77dd851d);
+        
+    
+        var popup_05b769865019787c9a3eb2a640dd8d05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fa3e2a1ff3624feecd590dba399a1ec = $(`<div id="html_9fa3e2a1ff3624feecd590dba399a1ec" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L4788054' target='_blank'>Amsterdam--Sarphatipark</a><br>127</div>`)[0];
+                popup_05b769865019787c9a3eb2a640dd8d05.setContent(html_9fa3e2a1ff3624feecd590dba399a1ec);
+            
+        
+
+        marker_58aac15f66f914ff797775dbf95fba4f.bindPopup(popup_05b769865019787c9a3eb2a640dd8d05)
+        ;
+
+        
+    
+    
+            var marker_b574eafafe6cc7ab70c6de7c4f6cb4bb = L.marker(
+                [52.379692, 5.0080168],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_ee27ef962584c01559a10b2ab1c7ec5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b574eafafe6cc7ab70c6de7c4f6cb4bb.setIcon(icon_ee27ef962584c01559a10b2ab1c7ec5e);
+        
+    
+        var popup_e4658f9d8debfc4fdccf997fb0dc644d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_855b8d53c3e9d075dabfe29392ba4889 = $(`<div id="html_855b8d53c3e9d075dabfe29392ba4889" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L11437410' target='_blank'>IJdoorn--Plasdras</a><br>127</div>`)[0];
+                popup_e4658f9d8debfc4fdccf997fb0dc644d.setContent(html_855b8d53c3e9d075dabfe29392ba4889);
+            
+        
+
+        marker_b574eafafe6cc7ab70c6de7c4f6cb4bb.bindPopup(popup_e4658f9d8debfc4fdccf997fb0dc644d)
+        ;
+
+        
+    
+    
+            var marker_ac1617073659e71b496d9fbea4e28560 = L.marker(
+                [52.736963, 4.658175],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_4b5a3d985d1cb021f8eecbf870bd4bd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ac1617073659e71b496d9fbea4e28560.setIcon(icon_4b5a3d985d1cb021f8eecbf870bd4bd7);
+        
+    
+        var popup_b8c6f9f2ed629747d79a47b4272f3442 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5685f079f3283a4a90a822d1fbbf28c = $(`<div id="html_d5685f079f3283a4a90a822d1fbbf28c" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L8672865' target='_blank'>Harger- en Pettemerpolder</a><br>126</div>`)[0];
+                popup_b8c6f9f2ed629747d79a47b4272f3442.setContent(html_d5685f079f3283a4a90a822d1fbbf28c);
+            
+        
+
+        marker_ac1617073659e71b496d9fbea4e28560.bindPopup(popup_b8c6f9f2ed629747d79a47b4272f3442)
+        ;
+
+        
+    
+    
+            var marker_1703bdee6f5197ec4fcab81a9327b26a = L.marker(
+                [52.4591772, 5.1127291],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_cfa83014b2641f5480b7137b194c4380 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1703bdee6f5197ec4fcab81a9327b26a.setIcon(icon_cfa83014b2641f5480b7137b194c4380);
+        
+    
+        var popup_67e682a15d6e017fd4eab677de787a44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af4002cf849f3f7f9ddfe45fe85ae8a2 = $(`<div id="html_af4002cf849f3f7f9ddfe45fe85ae8a2" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L10264670' target='_blank'>Marken</a><br>126</div>`)[0];
+                popup_67e682a15d6e017fd4eab677de787a44.setContent(html_af4002cf849f3f7f9ddfe45fe85ae8a2);
+            
+        
+
+        marker_1703bdee6f5197ec4fcab81a9327b26a.bindPopup(popup_67e682a15d6e017fd4eab677de787a44)
+        ;
+
+        
+    
+    
+            var marker_0f37627c3a62da5277fc7045af81d31a = L.marker(
+                [52.2800618, 5.1122678],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_99fdcdd2240b736fc995755658573043 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0f37627c3a62da5277fc7045af81d31a.setIcon(icon_99fdcdd2240b736fc995755658573043);
+        
+    
+        var popup_3a8ffba81538ec94a4ad92080349f32f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59390929c2fb27cd08e75ec315dda266 = $(`<div id="html_59390929c2fb27cd08e75ec315dda266" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L8118322' target='_blank'>Hilversumse Meent</a><br>125</div>`)[0];
+                popup_3a8ffba81538ec94a4ad92080349f32f.setContent(html_59390929c2fb27cd08e75ec315dda266);
+            
+        
+
+        marker_0f37627c3a62da5277fc7045af81d31a.bindPopup(popup_3a8ffba81538ec94a4ad92080349f32f)
+        ;
+
+        
+    
+    
+            var marker_a58a6956260cb794b9d5bd8f341afeff = L.marker(
+                [52.4078446, 5.2251148],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_8d981407df8b5f42e37aac39b444457a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a58a6956260cb794b9d5bd8f341afeff.setIcon(icon_8d981407df8b5f42e37aac39b444457a);
+        
+    
+        var popup_aed9aab0d3ec1bc9c0a2b12d4e422f48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44b5351d84b793ee7430ec1b4bc90515 = $(`<div id="html_44b5351d84b793ee7430ec1b4bc90515" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1140021' target='_blank'>Lepelaarplassen--Trekvogelpad</a><br>125</div>`)[0];
+                popup_aed9aab0d3ec1bc9c0a2b12d4e422f48.setContent(html_44b5351d84b793ee7430ec1b4bc90515);
+            
+        
+
+        marker_a58a6956260cb794b9d5bd8f341afeff.bindPopup(popup_aed9aab0d3ec1bc9c0a2b12d4e422f48)
+        ;
+
+        
+    
+    
+            var marker_10146719ab4f8c2196c7ac2376612136 = L.marker(
+                [52.1848534, 4.4954968],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_24daf6457d001dbdf74bd39c3a2ba6ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_10146719ab4f8c2196c7ac2376612136.setIcon(icon_24daf6457d001dbdf74bd39c3a2ba6ef);
+        
+    
+        var popup_e4b49da5f709c18417e625579f86fdb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19bd7aba13700dfd9fd734a77cdd2f23 = $(`<div id="html_19bd7aba13700dfd9fd734a77cdd2f23" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L4687523' target='_blank'>Poelgeestpolder</a><br>125</div>`)[0];
+                popup_e4b49da5f709c18417e625579f86fdb8.setContent(html_19bd7aba13700dfd9fd734a77cdd2f23);
+            
+        
+
+        marker_10146719ab4f8c2196c7ac2376612136.bindPopup(popup_e4b49da5f709c18417e625579f86fdb8)
+        ;
+
+        
+    
+    
+            var marker_bfa7ca442554d9cb0c3640d6ec381dce = L.marker(
+                [52.4149491, 5.2225106],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_eee642d75475984e0b787c7ee69425e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_bfa7ca442554d9cb0c3640d6ec381dce.setIcon(icon_eee642d75475984e0b787c7ee69425e5);
+        
+    
+        var popup_e38355d4fb4ae3523699d164c090783c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02c7996dc4c225e093b06556e9c4a451 = $(`<div id="html_02c7996dc4c225e093b06556e9c4a451" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1572981' target='_blank'>Lepelaarplassen--Trekvogelgraslandje</a><br>124</div>`)[0];
+                popup_e38355d4fb4ae3523699d164c090783c.setContent(html_02c7996dc4c225e093b06556e9c4a451);
+            
+        
+
+        marker_bfa7ca442554d9cb0c3640d6ec381dce.bindPopup(popup_e38355d4fb4ae3523699d164c090783c)
+        ;
+
+        
+    
+    
+            var marker_95d73ac5f91e58e565a7de3ee10075a0 = L.marker(
+                [52.2834449, 4.9266161],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_696923a438640b1d0f5287783beab086 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_95d73ac5f91e58e565a7de3ee10075a0.setIcon(icon_696923a438640b1d0f5287783beab086);
+        
+    
+        var popup_007fe2e8622db744e1aebed0d7096669 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3afaae8f52fc4aa24f01fcb8ab9eb6ef = $(`<div id="html_3afaae8f52fc4aa24f01fcb8ab9eb6ef" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L2841658' target='_blank'>Landje van Geijsel</a><br>123</div>`)[0];
+                popup_007fe2e8622db744e1aebed0d7096669.setContent(html_3afaae8f52fc4aa24f01fcb8ab9eb6ef);
+            
+        
+
+        marker_95d73ac5f91e58e565a7de3ee10075a0.bindPopup(popup_007fe2e8622db744e1aebed0d7096669)
+        ;
+
+        
+    
+    
+            var marker_1680e04003800218ccb4a97d56a6a9ff = L.marker(
+                [52.1726947, 5.0868201],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_d737ee2e368d8fa40ac544f56787ce57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1680e04003800218ccb4a97d56a6a9ff.setIcon(icon_d737ee2e368d8fa40ac544f56787ce57);
+        
+    
+        var popup_59963747d4a5dda4a77f6dd3b401e616 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8b2fd099be89b59564958803f82dd25 = $(`<div id="html_f8b2fd099be89b59564958803f82dd25" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L6674109' target='_blank'>Tienhovense Plassen, Tienhoven</a><br>123</div>`)[0];
+                popup_59963747d4a5dda4a77f6dd3b401e616.setContent(html_f8b2fd099be89b59564958803f82dd25);
+            
+        
+
+        marker_1680e04003800218ccb4a97d56a6a9ff.bindPopup(popup_59963747d4a5dda4a77f6dd3b401e616)
+        ;
+
+        
+    
+    
+            var marker_0b863394d3c07ad7d68d581c2ca60b40 = L.marker(
+                [52.54064, 4.6179664],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_dd97d75a9ee6b7108acc4326ace00e07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0b863394d3c07ad7d68d581c2ca60b40.setIcon(icon_dd97d75a9ee6b7108acc4326ace00e07);
+        
+    
+        var popup_38f42726e688333d04635b5c311c9add = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2dda9840911ca5fc230b233e024ffb1 = $(`<div id="html_c2dda9840911ca5fc230b233e024ffb1" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L8575312' target='_blank'>Castricum Bird Observatory</a><br>122</div>`)[0];
+                popup_38f42726e688333d04635b5c311c9add.setContent(html_c2dda9840911ca5fc230b233e024ffb1);
+            
+        
+
+        marker_0b863394d3c07ad7d68d581c2ca60b40.bindPopup(popup_38f42726e688333d04635b5c311c9add)
+        ;
+
+        
+    
+    
+            var marker_321d111a32d2996553fa2a1574f5af80 = L.marker(
+                [52.455339, 4.5662141],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_d549630e8cb2105f061e521d4ad1b3c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_321d111a32d2996553fa2a1574f5af80.setIcon(icon_d549630e8cb2105f061e521d4ad1b3c4);
+        
+    
+        var popup_cb7db669a2e4bc9c4415b21379d9946b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92ac43dbfd50f753c29cd1023859dcc6 = $(`<div id="html_92ac43dbfd50f753c29cd1023859dcc6" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L3928239' target='_blank'>Kennemermeer</a><br>122</div>`)[0];
+                popup_cb7db669a2e4bc9c4415b21379d9946b.setContent(html_92ac43dbfd50f753c29cd1023859dcc6);
+            
+        
+
+        marker_321d111a32d2996553fa2a1574f5af80.bindPopup(popup_cb7db669a2e4bc9c4415b21379d9946b)
+        ;
+
+        
+    
+    
+            var marker_fc98f415fb2a901487504c1c50842e13 = L.marker(
+                [52.7024466, 4.65168],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_43254c6b1cabd0e73788cb7c9305ff7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fc98f415fb2a901487504c1c50842e13.setIcon(icon_43254c6b1cabd0e73788cb7c9305ff7f);
+        
+    
+        var popup_73bf5cbafe4ce937f363636ff7bda9c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b2d8801b9deff79df1e047101191512 = $(`<div id="html_3b2d8801b9deff79df1e047101191512" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L9552721' target='_blank'>Schoorlse Duinen</a><br>121</div>`)[0];
+                popup_73bf5cbafe4ce937f363636ff7bda9c5.setContent(html_3b2d8801b9deff79df1e047101191512);
+            
+        
+
+        marker_fc98f415fb2a901487504c1c50842e13.bindPopup(popup_73bf5cbafe4ce937f363636ff7bda9c5)
+        ;
+
+        
+    
+    
+            var marker_c20b61517a99c6df74cb601ded646f5d = L.marker(
+                [52.4732136, 4.8195648],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_327f4ec0ef07583b508d75cbcde70e26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c20b61517a99c6df74cb601ded646f5d.setIcon(icon_327f4ec0ef07583b508d75cbcde70e26);
+        
+    
+        var popup_21aef278ee3be1a729318aca298aaab3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_716f368f65a009fdc045eb372b0b8d0f = $(`<div id="html_716f368f65a009fdc045eb372b0b8d0f" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1083870' target='_blank'>Zaanse Schans</a><br>120</div>`)[0];
+                popup_21aef278ee3be1a729318aca298aaab3.setContent(html_716f368f65a009fdc045eb372b0b8d0f);
+            
+        
+
+        marker_c20b61517a99c6df74cb601ded646f5d.bindPopup(popup_21aef278ee3be1a729318aca298aaab3)
+        ;
+
+        
+    
+    
+            var marker_0f66c63012bf221e3a0047947017f84e = L.marker(
+                [52.3020806, 4.8088911],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_e813a96962063ab8a8b3403d7f621d17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0f66c63012bf221e3a0047947017f84e.setIcon(icon_e813a96962063ab8a8b3403d7f621d17);
+        
+    
+        var popup_55095b4b933ec1704ed6818c2268a0f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f1c956249751861ae392ecc11a4e9ef = $(`<div id="html_4f1c956249751861ae392ecc11a4e9ef" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L8816660' target='_blank'>Park Schinkelbos</a><br>119</div>`)[0];
+                popup_55095b4b933ec1704ed6818c2268a0f1.setContent(html_4f1c956249751861ae392ecc11a4e9ef);
+            
+        
+
+        marker_0f66c63012bf221e3a0047947017f84e.bindPopup(popup_55095b4b933ec1704ed6818c2268a0f1)
+        ;
+
+        
+    
+    
+            var marker_cfaed51c2a1c7b075ffcd7ee4dc8f107 = L.marker(
+                [52.3456894, 4.5816314],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_005fed0b6981458c753b41b86846aa09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_cfaed51c2a1c7b075ffcd7ee4dc8f107.setIcon(icon_005fed0b6981458c753b41b86846aa09);
+        
+    
+        var popup_552b9d6e50b96a7dae5d6ea8b12fc398 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bde3e559abbc9435877333fe49f1891d = $(`<div id="html_bde3e559abbc9435877333fe49f1891d" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L4575961' target='_blank'>Amsterdamse Waterleidingduinen -- De Oase</a><br>118</div>`)[0];
+                popup_552b9d6e50b96a7dae5d6ea8b12fc398.setContent(html_bde3e559abbc9435877333fe49f1891d);
+            
+        
+
+        marker_cfaed51c2a1c7b075ffcd7ee4dc8f107.bindPopup(popup_552b9d6e50b96a7dae5d6ea8b12fc398)
+        ;
+
+        
+    
+    
+            var marker_87d0f949ca688626aa720c0bcbf4d920 = L.marker(
+                [52.4195756, 4.6798968],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_1bbaa74f33965ca2cbdf75673ac8a4e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_87d0f949ca688626aa720c0bcbf4d920.setIcon(icon_1bbaa74f33965ca2cbdf75673ac8a4e2);
+        
+    
+        var popup_14327a634de9e2048cb426ae37b6e7e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81ccdb5dda5aa615ad275d8f90949c47 = $(`<div id="html_81ccdb5dda5aa615ad275d8f90949c47" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L3647903' target='_blank'>Landje van Gruyters</a><br>118</div>`)[0];
+                popup_14327a634de9e2048cb426ae37b6e7e3.setContent(html_81ccdb5dda5aa615ad275d8f90949c47);
+            
+        
+
+        marker_87d0f949ca688626aa720c0bcbf4d920.bindPopup(popup_14327a634de9e2048cb426ae37b6e7e3)
+        ;
+
+        
+    
+    
+            var marker_32503c82f150093578d544854b15ae69 = L.marker(
+                [52.7545503, 5.0584881],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_501b30bd02ffe87548b70370ecd3a79a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_32503c82f150093578d544854b15ae69.setIcon(icon_501b30bd02ffe87548b70370ecd3a79a);
+        
+    
+        var popup_8946e9d14be4be4eacbcbb8e1fd2da6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccd2a17e0ee9d9085b407d35f859f695 = $(`<div id="html_ccd2a17e0ee9d9085b407d35f859f695" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L8332339' target='_blank'>Waterberging Twisk</a><br>118</div>`)[0];
+                popup_8946e9d14be4be4eacbcbb8e1fd2da6b.setContent(html_ccd2a17e0ee9d9085b407d35f859f695);
+            
+        
+
+        marker_32503c82f150093578d544854b15ae69.bindPopup(popup_8946e9d14be4be4eacbcbb8e1fd2da6b)
+        ;
+
+        
+    
+    
+            var marker_545592a790a6428bd9f7a87c81e18c1b = L.marker(
+                [51.9546752, 4.9884855],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_4e44a2603e8e75c85765bf4e36af96b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_545592a790a6428bd9f7a87c81e18c1b.setIcon(icon_4e44a2603e8e75c85765bf4e36af96b6);
+        
+    
+        var popup_ba5dfe4b694ec37b7d594738af4fb078 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef5adc8731dd2e8f837c729d0e8d1ab3 = $(`<div id="html_ef5adc8731dd2e8f837c729d0e8d1ab3" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L18500388' target='_blank'>Zouweboezem</a><br>118</div>`)[0];
+                popup_ba5dfe4b694ec37b7d594738af4fb078.setContent(html_ef5adc8731dd2e8f837c729d0e8d1ab3);
+            
+        
+
+        marker_545592a790a6428bd9f7a87c81e18c1b.bindPopup(popup_ba5dfe4b694ec37b7d594738af4fb078)
+        ;
+
+        
+    
+    
+            var marker_bc8a23e091a08b4ebd2f2bdd680d1866 = L.marker(
+                [52.4909127, 5.4092246],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_b1c8987f14c4b79fb30ebb7fce85f218 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_bc8a23e091a08b4ebd2f2bdd680d1866.setIcon(icon_b1c8987f14c4b79fb30ebb7fce85f218);
+        
+    
+        var popup_8ed1ef783bbc52b9f6051b7c1aec4199 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_330daf05ccf4cbd8c494cb3b9b8392d4 = $(`<div id="html_330daf05ccf4cbd8c494cb3b9b8392d4" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L10179541' target='_blank'>Lelystad--Het Bovenwater</a><br>117</div>`)[0];
+                popup_8ed1ef783bbc52b9f6051b7c1aec4199.setContent(html_330daf05ccf4cbd8c494cb3b9b8392d4);
+            
+        
+
+        marker_bc8a23e091a08b4ebd2f2bdd680d1866.bindPopup(popup_8ed1ef783bbc52b9f6051b7c1aec4199)
+        ;
+
+        
+    
+    
+            var marker_3a8c7071791ba3f6ef9bbed9cb65076c = L.marker(
+                [52.4439129, 5.279452],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_31239f6f454fe4548271417b7760a2cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3a8c7071791ba3f6ef9bbed9cb65076c.setIcon(icon_31239f6f454fe4548271417b7760a2cd);
+        
+    
+        var popup_81891bd0daded4c1ce548235f14906bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff2a403ba6e3a4d431d8937de7817d02 = $(`<div id="html_ff2a403ba6e3a4d431d8937de7817d02" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L8321425' target='_blank'>Oostvaardersdijk--Uitkijkpunt Kuifeend</a><br>117</div>`)[0];
+                popup_81891bd0daded4c1ce548235f14906bb.setContent(html_ff2a403ba6e3a4d431d8937de7817d02);
+            
+        
+
+        marker_3a8c7071791ba3f6ef9bbed9cb65076c.bindPopup(popup_81891bd0daded4c1ce548235f14906bb)
+        ;
+
+        
+    
+    
+            var marker_7867cbb29843457ab4de97114c66988c = L.marker(
+                [52.3539287, 4.9825963],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_c21e82af745097227adf4dd2121444e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7867cbb29843457ab4de97114c66988c.setIcon(icon_c21e82af745097227adf4dd2121444e4);
+        
+    
+        var popup_7b4d7aa663b6eeee0cf7e5a694039d84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efd6f72edb915ee88dbd0fe4a8488a08 = $(`<div id="html_efd6f72edb915ee88dbd0fe4a8488a08" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L4162071' target='_blank'>Amsterdam -- Diemerpark</a><br>116</div>`)[0];
+                popup_7b4d7aa663b6eeee0cf7e5a694039d84.setContent(html_efd6f72edb915ee88dbd0fe4a8488a08);
+            
+        
+
+        marker_7867cbb29843457ab4de97114c66988c.bindPopup(popup_7b4d7aa663b6eeee0cf7e5a694039d84)
+        ;
+
+        
+    
+    
+            var marker_09bbee4c8f80b6c3c172e6423a277508 = L.marker(
+                [52.3834117, 5.0047045],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_99d8f0d4c0e7d5fa58dcbd529eca45d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_09bbee4c8f80b6c3c172e6423a277508.setIcon(icon_99d8f0d4c0e7d5fa58dcbd529eca45d4);
+        
+    
+        var popup_77682309497068342a51023f9eee05be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_901a98a07853e9d36886aac8e23bfb85 = $(`<div id="html_901a98a07853e9d36886aac8e23bfb85" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L6380375' target='_blank'>De Kinsel</a><br>116</div>`)[0];
+                popup_77682309497068342a51023f9eee05be.setContent(html_901a98a07853e9d36886aac8e23bfb85);
+            
+        
+
+        marker_09bbee4c8f80b6c3c172e6423a277508.bindPopup(popup_77682309497068342a51023f9eee05be)
+        ;
+
+        
+    
+    
+            var marker_de355430d90caa26c5b55814e8b7c2ca = L.marker(
+                [52.1287743, 5.1759182],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_5b7ea1ecfc1ab0ba745adfea1550b1bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_de355430d90caa26c5b55814e8b7c2ca.setIcon(icon_5b7ea1ecfc1ab0ba745adfea1550b1bb);
+        
+    
+        var popup_37461a7fef3c8ea3cf25fbca30795b9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1471fc822327f8dccf51bd0c3550e376 = $(`<div id="html_1471fc822327f8dccf51bd0c3550e376" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L13146165' target='_blank'>Beukenburg</a><br>115</div>`)[0];
+                popup_37461a7fef3c8ea3cf25fbca30795b9b.setContent(html_1471fc822327f8dccf51bd0c3550e376);
+            
+        
+
+        marker_de355430d90caa26c5b55814e8b7c2ca.bindPopup(popup_37461a7fef3c8ea3cf25fbca30795b9b)
+        ;
+
+        
+    
+    
+            var marker_e354e6216e7bbc3177e0fcd347a0c3c1 = L.marker(
+                [52.4606379, 5.400424],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_f64f574de78b51cb9f4b89549a29ec56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e354e6216e7bbc3177e0fcd347a0c3c1.setIcon(icon_f64f574de78b51cb9f4b89549a29ec56);
+        
+    
+        var popup_02c87569db43b8d7d9e08584095786fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70f44478ef83248b5076256e78de4b58 = $(`<div id="html_70f44478ef83248b5076256e78de4b58" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L9238056' target='_blank'>De Schollevaar</a><br>115</div>`)[0];
+                popup_02c87569db43b8d7d9e08584095786fb.setContent(html_70f44478ef83248b5076256e78de4b58);
+            
+        
+
+        marker_e354e6216e7bbc3177e0fcd347a0c3c1.bindPopup(popup_02c87569db43b8d7d9e08584095786fb)
+        ;
+
+        
+    
+    
+            var marker_51d3bb2902e45084bfc7e5079861feaf = L.marker(
+                [52.6893244, 4.7572517],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_46a8599ae21dc7b427bf3f569994a0ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_51d3bb2902e45084bfc7e5079861feaf.setIcon(icon_46a8599ae21dc7b427bf3f569994a0ea);
+        
+    
+        var popup_a0f9c59d96f494a99059d5c503d626c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7418219628fea711b106d3bbae7ad8f1 = $(`<div id="html_7418219628fea711b106d3bbae7ad8f1" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1229507' target='_blank'>Geestmerambacht (Noord Holland)</a><br>115</div>`)[0];
+                popup_a0f9c59d96f494a99059d5c503d626c1.setContent(html_7418219628fea711b106d3bbae7ad8f1);
+            
+        
+
+        marker_51d3bb2902e45084bfc7e5079861feaf.bindPopup(popup_a0f9c59d96f494a99059d5c503d626c1)
+        ;
+
+        
+    
+    
+            var marker_025291fbe524d7a24b86bc93a35d0d01 = L.marker(
+                [51.9951257, 4.5843185],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_7eedf46c17d379de7045f88c5136e3f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_025291fbe524d7a24b86bc93a35d0d01.setIcon(icon_7eedf46c17d379de7045f88c5136e3f5);
+        
+    
+        var popup_741cdba8c56bb9ae1d1f5176d7a91279 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6dd90cfb920cb910cd2be59e502f60d = $(`<div id="html_e6dd90cfb920cb910cd2be59e502f60d" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L9834290' target='_blank'>Zevenhuizen--Polder Eendracht</a><br>115</div>`)[0];
+                popup_741cdba8c56bb9ae1d1f5176d7a91279.setContent(html_e6dd90cfb920cb910cd2be59e502f60d);
+            
+        
+
+        marker_025291fbe524d7a24b86bc93a35d0d01.bindPopup(popup_741cdba8c56bb9ae1d1f5176d7a91279)
+        ;
+
+        
+    
+    
+            var marker_c20b45d1f737cd54c9bc3ad880fb8849 = L.marker(
+                [52.3871031, 4.8748505],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_53292dcf1a4515fe7a0cca8c5ef5a06f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c20b45d1f737cd54c9bc3ad880fb8849.setIcon(icon_53292dcf1a4515fe7a0cca8c5ef5a06f);
+        
+    
+        var popup_2ba7d61b4f547f9dd284b6b3eb763af0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0eca9a90b43b5a95a3045beb14aa6c9b = $(`<div id="html_0eca9a90b43b5a95a3045beb14aa6c9b" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L4794797' target='_blank'>Amsterdam--Westerpark</a><br>113</div>`)[0];
+                popup_2ba7d61b4f547f9dd284b6b3eb763af0.setContent(html_0eca9a90b43b5a95a3045beb14aa6c9b);
+            
+        
+
+        marker_c20b45d1f737cd54c9bc3ad880fb8849.bindPopup(popup_2ba7d61b4f547f9dd284b6b3eb763af0)
+        ;
+
+        
+    
+    
+            var marker_75e1e9562cd5b0c8ebafb9092c1c3f97 = L.marker(
+                [52.3373844, 5.177393],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_e5ed2fb3d0fecd23461a64c87ae9feae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_75e1e9562cd5b0c8ebafb9092c1c3f97.setIcon(icon_e5ed2fb3d0fecd23461a64c87ae9feae);
+        
+    
+        var popup_1c313078d3425474d2dbc67857c1e71a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a1aa0545a679efbaeb9ad9cd577dee1 = $(`<div id="html_9a1aa0545a679efbaeb9ad9cd577dee1" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L13976168' target='_blank'>Kromslootpark</a><br>113</div>`)[0];
+                popup_1c313078d3425474d2dbc67857c1e71a.setContent(html_9a1aa0545a679efbaeb9ad9cd577dee1);
+            
+        
+
+        marker_75e1e9562cd5b0c8ebafb9092c1c3f97.bindPopup(popup_1c313078d3425474d2dbc67857c1e71a)
+        ;
+
+        
+    
+    
+            var marker_3bfbd90df66de1bd7e2ae8c539447a72 = L.marker(
+                [52.1558447, 5.115273],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_17c27383c982e9b757fc0b3a29ec1aee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3bfbd90df66de1bd7e2ae8c539447a72.setIcon(icon_17c27383c982e9b757fc0b3a29ec1aee);
+        
+    
+        var popup_0021679cca99db336a84c3eed387e3f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68c012c99bbcaa1f0842bb242f8ca2b6 = $(`<div id="html_68c012c99bbcaa1f0842bb242f8ca2b6" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1137765' target='_blank'>Westbroekse Zodden--Bert Bos Pad</a><br>113</div>`)[0];
+                popup_0021679cca99db336a84c3eed387e3f0.setContent(html_68c012c99bbcaa1f0842bb242f8ca2b6);
+            
+        
+
+        marker_3bfbd90df66de1bd7e2ae8c539447a72.bindPopup(popup_0021679cca99db336a84c3eed387e3f0)
+        ;
+
+        
+    
+    
+            var marker_24b46e22aca2f74957b1cb9ec9ab6898 = L.marker(
+                [52.4441743, 5.4148436],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_051101d2e1bd66b1e5f56ea626ea7aeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_24b46e22aca2f74957b1cb9ec9ab6898.setIcon(icon_051101d2e1bd66b1e5f56ea626ea7aeb);
+        
+    
+        var popup_082540e1968b90241ad39656c5973146 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a129e185bd0f1885db1b7ce67fc845b1 = $(`<div id="html_a129e185bd0f1885db1b7ce67fc845b1" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L9238009' target='_blank'>De Poelruiter</a><br>112</div>`)[0];
+                popup_082540e1968b90241ad39656c5973146.setContent(html_a129e185bd0f1885db1b7ce67fc845b1);
+            
+        
+
+        marker_24b46e22aca2f74957b1cb9ec9ab6898.bindPopup(popup_082540e1968b90241ad39656c5973146)
+        ;
+
+        
+    
+    
+            var marker_f7e7c2ad2fa14d2e2e8b7c415cfb50d4 = L.marker(
+                [52.1861099, 4.5172393],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_92e259c032505f3c9de7d22766fc5dec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f7e7c2ad2fa14d2e2e8b7c415cfb50d4.setIcon(icon_92e259c032505f3c9de7d22766fc5dec);
+        
+    
+        var popup_5b40875cddc27c908b9e914ca375874e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ce8960e9e283e69ee1596462213e88a = $(`<div id="html_7ce8960e9e283e69ee1596462213e88a" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L10286326' target='_blank'>De Strengen</a><br>112</div>`)[0];
+                popup_5b40875cddc27c908b9e914ca375874e.setContent(html_7ce8960e9e283e69ee1596462213e88a);
+            
+        
+
+        marker_f7e7c2ad2fa14d2e2e8b7c415cfb50d4.bindPopup(popup_5b40875cddc27c908b9e914ca375874e)
+        ;
+
+        
+    
+    
+            var marker_4f1351190d05e2528a82096d1844b5ad = L.marker(
+                [52.1601579, 4.3598127],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_a16ab28bd30562b6a5b97b5bf2a3cc96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4f1351190d05e2528a82096d1844b5ad.setIcon(icon_a16ab28bd30562b6a5b97b5bf2a3cc96);
+        
+    
+        var popup_4ec82cdfd8919fb87bca81390396be59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbebc33bbd11643c1d3f311030d3d37a = $(`<div id="html_bbebc33bbd11643c1d3f311030d3d37a" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L3947004' target='_blank'>Ganzenhoek</a><br>112</div>`)[0];
+                popup_4ec82cdfd8919fb87bca81390396be59.setContent(html_bbebc33bbd11643c1d3f311030d3d37a);
+            
+        
+
+        marker_4f1351190d05e2528a82096d1844b5ad.bindPopup(popup_4ec82cdfd8919fb87bca81390396be59)
+        ;
+
+        
+    
+    
+            var marker_ce186b85c1ecc40f4c8cab8344dda6b2 = L.marker(
+                [52.3037433, 5.4684448],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_f1e53bf1c4a74421389204977a3ec958 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ce186b85c1ecc40f4c8cab8344dda6b2.setIcon(icon_f1e53bf1c4a74421389204977a3ec958);
+        
+    
+        var popup_0927688d045afb14c73ca8d8d000bd2e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f419ef611da38aca8199ee30431f4990 = $(`<div id="html_f419ef611da38aca8199ee30431f4990" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L4707334' target='_blank'>Horsterwold</a><br>112</div>`)[0];
+                popup_0927688d045afb14c73ca8d8d000bd2e.setContent(html_f419ef611da38aca8199ee30431f4990);
+            
+        
+
+        marker_ce186b85c1ecc40f4c8cab8344dda6b2.bindPopup(popup_0927688d045afb14c73ca8d8d000bd2e)
+        ;
+
+        
+    
+    
+            var marker_89ac4fefa546e8091cb3ab3925eaa37f = L.marker(
+                [52.2520416, 5.4390665],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_be56955698b10b4db2250cb98150a905 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_89ac4fefa546e8091cb3ab3925eaa37f.setIcon(icon_be56955698b10b4db2250cb98150a905);
+        
+    
+        var popup_acf4b962a22ea2cf8ade525f109ff8ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29ea48688d6f25b1f69f63975624ffc8 = $(`<div id="html_29ea48688d6f25b1f69f63975624ffc8" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L14392322' target='_blank'>Polder Arkenheem--Stoomgemaal</a><br>112</div>`)[0];
+                popup_acf4b962a22ea2cf8ade525f109ff8ec.setContent(html_29ea48688d6f25b1f69f63975624ffc8);
+            
+        
+
+        marker_89ac4fefa546e8091cb3ab3925eaa37f.bindPopup(popup_acf4b962a22ea2cf8ade525f109ff8ec)
+        ;
+
+        
+    
+    
+            var marker_5500722b0b4dae60317e5260967cbfa3 = L.marker(
+                [52.755589, 4.6673843],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_6dc6be719d7e5d1a9f6cf6ed10951321 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5500722b0b4dae60317e5260967cbfa3.setIcon(icon_6dc6be719d7e5d1a9f6cf6ed10951321);
+        
+    
+        var popup_1d6099d65222a53b608d7671f41b5adb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29b2449191684fc35691ff8e823bb467 = $(`<div id="html_29b2449191684fc35691ff8e823bb467" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L6254528' target='_blank'>Polder Q (Petten)</a><br>112</div>`)[0];
+                popup_1d6099d65222a53b608d7671f41b5adb.setContent(html_29b2449191684fc35691ff8e823bb467);
+            
+        
+
+        marker_5500722b0b4dae60317e5260967cbfa3.bindPopup(popup_1d6099d65222a53b608d7671f41b5adb)
+        ;
+
+        
+    
+    
+            var marker_b429a92b4773bc7d2b1114c2998dc690 = L.marker(
+                [52.5707994, 4.8092973],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_f964327ad36bec2e32e20f60f12ee03e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b429a92b4773bc7d2b1114c2998dc690.setIcon(icon_f964327ad36bec2e32e20f60f12ee03e);
+        
+    
+        var popup_bd927f82b98520102839bcb172534be3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3053d7b0e4e80b72961e935585fb421a = $(`<div id="html_3053d7b0e4e80b72961e935585fb421a" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L4874728' target='_blank'>Eilandspolder--Kerkemeertje</a><br>111</div>`)[0];
+                popup_bd927f82b98520102839bcb172534be3.setContent(html_3053d7b0e4e80b72961e935585fb421a);
+            
+        
+
+        marker_b429a92b4773bc7d2b1114c2998dc690.bindPopup(popup_bd927f82b98520102839bcb172534be3)
+        ;
+
+        
+    
+    
+            var marker_42c80aec5d312973d4f85fd5ef5db175 = L.marker(
+                [52.0984271, 5.1911473],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_229a5b67d3004450b6318218470627b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_42c80aec5d312973d4f85fd5ef5db175.setIcon(icon_229a5b67d3004450b6318218470627b0);
+        
+    
+        var popup_91d6edea3c2b3034d8159297f4048543 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54feb45109a8a45164468af4a18cc774 = $(`<div id="html_54feb45109a8a45164468af4a18cc774" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1137017' target='_blank'>Jacobssteeg</a><br>111</div>`)[0];
+                popup_91d6edea3c2b3034d8159297f4048543.setContent(html_54feb45109a8a45164468af4a18cc774);
+            
+        
+
+        marker_42c80aec5d312973d4f85fd5ef5db175.bindPopup(popup_91d6edea3c2b3034d8159297f4048543)
+        ;
+
+        
+    
+    
+            var marker_d08a772bf967df4694ffe8b60499ab19 = L.marker(
+                [52.4200104, 4.9952602],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_c8e7f68c298aa649a695a9a1f7c56f19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d08a772bf967df4694ffe8b60499ab19.setIcon(icon_c8e7f68c298aa649a695a9a1f7c56f19);
+        
+    
+        var popup_691fa75853af03b51d7db3f94002407c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eec4a16d3b953d739aacf0c8c5db6988 = $(`<div id="html_eec4a16d3b953d739aacf0c8c5db6988" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L11585758' target='_blank'>Waterland--Volgermeerpolder</a><br>111</div>`)[0];
+                popup_691fa75853af03b51d7db3f94002407c.setContent(html_eec4a16d3b953d739aacf0c8c5db6988);
+            
+        
+
+        marker_d08a772bf967df4694ffe8b60499ab19.bindPopup(popup_691fa75853af03b51d7db3f94002407c)
+        ;
+
+        
+    
+    
+            var marker_7b19cdbf301d355b9029b2c0ab587720 = L.marker(
+                [52.2566774, 5.2885403],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_ff7cf8d655bdc74e5315aab6db464894 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7b19cdbf301d355b9029b2c0ab587720.setIcon(icon_ff7cf8d655bdc74e5315aab6db464894);
+        
+    
+        var popup_09e91ae70656bc69effc79c7427f7a76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1fcfda1cb79ecd06a2b9007f9551859d = $(`<div id="html_1fcfda1cb79ecd06a2b9007f9551859d" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L6259430' target='_blank'>Eempolders</a><br>110</div>`)[0];
+                popup_09e91ae70656bc69effc79c7427f7a76.setContent(html_1fcfda1cb79ecd06a2b9007f9551859d);
+            
+        
+
+        marker_7b19cdbf301d355b9029b2c0ab587720.bindPopup(popup_09e91ae70656bc69effc79c7427f7a76)
+        ;
+
+        
+    
+    
+            var marker_aa3780e38d36ae3922cf97ef184ae5e1 = L.marker(
+                [52.5916564, 5.3622153],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_8ab1c5eb1b96592de079c61d8a226ac6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_aa3780e38d36ae3922cf97ef184ae5e1.setIcon(icon_8ab1c5eb1b96592de079c61d8a226ac6);
+        
+    
+        var popup_45077403bf64b9a6e48d1b750858117d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c1a781b670c8462ecd98dc25e1f7ecf = $(`<div id="html_7c1a781b670c8462ecd98dc25e1f7ecf" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L8023351' target='_blank'>Marker Wadden--Eerste Eiland</a><br>110</div>`)[0];
+                popup_45077403bf64b9a6e48d1b750858117d.setContent(html_7c1a781b670c8462ecd98dc25e1f7ecf);
+            
+        
+
+        marker_aa3780e38d36ae3922cf97ef184ae5e1.bindPopup(popup_45077403bf64b9a6e48d1b750858117d)
+        ;
+
+        
+    
+    
+            var marker_9259f1f6c2d02466dfae8beed525940c = L.marker(
+                [52.311082, 5.0823784],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_310c035b6adcbca153e45e3854289046 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9259f1f6c2d02466dfae8beed525940c.setIcon(icon_310c035b6adcbca153e45e3854289046);
+        
+    
+        var popup_0bcfe237422b05d308319444924f9946 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74399be3b4927e1fab1ae481f4054229 = $(`<div id="html_74399be3b4927e1fab1ae481f4054229" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L5529994' target='_blank'>Nieuwe Keverdijksche Polder</a><br>110</div>`)[0];
+                popup_0bcfe237422b05d308319444924f9946.setContent(html_74399be3b4927e1fab1ae481f4054229);
+            
+        
+
+        marker_9259f1f6c2d02466dfae8beed525940c.bindPopup(popup_0bcfe237422b05d308319444924f9946)
+        ;
+
+        
+    
+    
+            var marker_004ec6765d3ab19dc8494a3ab127d87e = L.marker(
+                [52.3654139, 4.5440896],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_936485d66b728c85cb1ab61cec82e0e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_004ec6765d3ab19dc8494a3ab127d87e.setIcon(icon_936485d66b728c85cb1ab61cec82e0e8);
+        
+    
+        var popup_1ea7df7dab9e0d14ca4a300c8b93e3f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06e13d38326aea4498872dcc0125f3a4 = $(`<div id="html_06e13d38326aea4498872dcc0125f3a4" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1781768' target='_blank'>Zandvoortse Duinen</a><br>110</div>`)[0];
+                popup_1ea7df7dab9e0d14ca4a300c8b93e3f3.setContent(html_06e13d38326aea4498872dcc0125f3a4);
+            
+        
+
+        marker_004ec6765d3ab19dc8494a3ab127d87e.bindPopup(popup_1ea7df7dab9e0d14ca4a300c8b93e3f3)
+        ;
+
+        
+    
+    
+            var marker_3fc9a5445c989f37e422f1e3a585713c = L.marker(
+                [52.2697331, 4.5468807],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_cd22688a68fc85d6b91de4819a2bccb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3fc9a5445c989f37e422f1e3a585713c.setIcon(icon_cd22688a68fc85d6b91de4819a2bccb8);
+        
+    
+        var popup_cd9366c9ea64a53786754add705435e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_daeca6ca642055d02b2535c7dddac5a2 = $(`<div id="html_daeca6ca642055d02b2535c7dddac5a2" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1168778' target='_blank'>De Keukenhof (Keukenhof Gardens)</a><br>108</div>`)[0];
+                popup_cd9366c9ea64a53786754add705435e7.setContent(html_daeca6ca642055d02b2535c7dddac5a2);
+            
+        
+
+        marker_3fc9a5445c989f37e422f1e3a585713c.bindPopup(popup_cd9366c9ea64a53786754add705435e7)
+        ;
+
+        
+    
+    
+            var marker_2383f132fa5aaf6773e76d460c4f4be8 = L.marker(
+                [52.130219, 4.336882],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_7a3f67a7cc481cee9de5f1cbb7d658d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2383f132fa5aaf6773e76d460c4f4be8.setIcon(icon_7a3f67a7cc481cee9de5f1cbb7d658d7);
+        
+    
+        var popup_ce0d08f586f3145f6a4e4448cf8b85c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3affd4dad19b746572db8927360d4d79 = $(`<div id="html_3affd4dad19b746572db8927360d4d79" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L21015216' target='_blank'>Meijendel</a><br>107</div>`)[0];
+                popup_ce0d08f586f3145f6a4e4448cf8b85c0.setContent(html_3affd4dad19b746572db8927360d4d79);
+            
+        
+
+        marker_2383f132fa5aaf6773e76d460c4f4be8.bindPopup(popup_ce0d08f586f3145f6a4e4448cf8b85c0)
+        ;
+
+        
+    
+    
+            var marker_fb84c86806b253b214e8ba0ee3dfe573 = L.marker(
+                [52.1208887, 4.4052886],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_ca3c027ee5a6b5b3a89552c2d594ac29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fb84c86806b253b214e8ba0ee3dfe573.setIcon(icon_ca3c027ee5a6b5b3a89552c2d594ac29);
+        
+    
+        var popup_733067696051b50d2b5f44dd76dfd88b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_243e2e45bfc493603d2e898e979c8090 = $(`<div id="html_243e2e45bfc493603d2e898e979c8090" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L7910005' target='_blank'>Wassenaar--Raaphorst (De Horsten)</a><br>107</div>`)[0];
+                popup_733067696051b50d2b5f44dd76dfd88b.setContent(html_243e2e45bfc493603d2e898e979c8090);
+            
+        
+
+        marker_fb84c86806b253b214e8ba0ee3dfe573.bindPopup(popup_733067696051b50d2b5f44dd76dfd88b)
+        ;
+
+        
+    
+    
+            var marker_ec8e5ef0c7e30ab46fd51c72771d77c2 = L.marker(
+                [52.3442376, 4.5616275],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_36eaea462a594a270887c42bf667ccc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ec8e5ef0c7e30ab46fd51c72771d77c2.setIcon(icon_36eaea462a594a270887c42bf667ccc1);
+        
+    
+        var popup_7e905a0b474066ef3f8525d8d183d623 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06c68215e8d52de956794d6b74b1882a = $(`<div id="html_06c68215e8d52de956794d6b74b1882a" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L8000615' target='_blank'>Vogelkijkhut Waterleidingduinen</a><br>106</div>`)[0];
+                popup_7e905a0b474066ef3f8525d8d183d623.setContent(html_06c68215e8d52de956794d6b74b1882a);
+            
+        
+
+        marker_ec8e5ef0c7e30ab46fd51c72771d77c2.bindPopup(popup_7e905a0b474066ef3f8525d8d183d623)
+        ;
+
+        
+    
+    
+            var marker_120f8792f8e16f5a4b1a3fe6ae479f6b = L.marker(
+                [52.5985217, 4.6436763],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_bf1fa4b1aba45eaf0ba2e8388f0c3ab8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_120f8792f8e16f5a4b1a3fe6ae479f6b.setIcon(icon_bf1fa4b1aba45eaf0ba2e8388f0c3ab8);
+        
+    
+        var popup_b222dc455ebe5dfab0a14afebeb50275 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8d08830270c09897dbb6128d54d90ae = $(`<div id="html_b8d08830270c09897dbb6128d54d90ae" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L7389399' target='_blank'>Egmond-Binnen--Noordhollands Duinreservaat</a><br>105</div>`)[0];
+                popup_b222dc455ebe5dfab0a14afebeb50275.setContent(html_b8d08830270c09897dbb6128d54d90ae);
+            
+        
+
+        marker_120f8792f8e16f5a4b1a3fe6ae479f6b.bindPopup(popup_b222dc455ebe5dfab0a14afebeb50275)
+        ;
+
+        
+    
+    
+            var marker_1657ced24a3870230acab8b96ac6fae1 = L.marker(
+                [52.4063985, 5.2209949],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_dd9b431c8bb658a34142485dea3e9dd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1657ced24a3870230acab8b96ac6fae1.setIcon(icon_dd9b431c8bb658a34142485dea3e9dd1);
+        
+    
+        var popup_5e95654c69dff27cbbcaedd7c944c073 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ee974951482e43173b13a57defab3e5 = $(`<div id="html_0ee974951482e43173b13a57defab3e5" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L10221646' target='_blank'>Lepelaarhut</a><br>104</div>`)[0];
+                popup_5e95654c69dff27cbbcaedd7c944c073.setContent(html_0ee974951482e43173b13a57defab3e5);
+            
+        
+
+        marker_1657ced24a3870230acab8b96ac6fae1.bindPopup(popup_5e95654c69dff27cbbcaedd7c944c073)
+        ;
+
+        
+    
+    
+            var marker_1413fc5356f2f59259341189619b2a6b = L.marker(
+                [52.4409436, 4.5769644],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_0b743d808fce1e38ef007d632358ab6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1413fc5356f2f59259341189619b2a6b.setIcon(icon_0b743d808fce1e38ef007d632358ab6a);
+        
+    
+        var popup_42dd4cc64c14547c38116f717c602331 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c91f126a151d8773418d3c80da91c0dd = $(`<div id="html_c91f126a151d8773418d3c80da91c0dd" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L4578021' target='_blank'>Nationaal Park Zuid-Kennemerland -- Duinmeer</a><br>104</div>`)[0];
+                popup_42dd4cc64c14547c38116f717c602331.setContent(html_c91f126a151d8773418d3c80da91c0dd);
+            
+        
+
+        marker_1413fc5356f2f59259341189619b2a6b.bindPopup(popup_42dd4cc64c14547c38116f717c602331)
+        ;
+
+        
+    
+    
+            var marker_8bce64a894ad994a369f6ff33544e698 = L.marker(
+                [52.0738, 4.4503],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_20573b1ecf03616c7805404f4331eb0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8bce64a894ad994a369f6ff33544e698.setIcon(icon_20573b1ecf03616c7805404f4331eb0f);
+        
+    
+        var popup_c3e7cc86dc92799d89141249c0410d89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1780febb180b71cb944aa17368d2f3ce = $(`<div id="html_1780febb180b71cb944aa17368d2f3ce" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L9145695' target='_blank'>Buytenpark</a><br>103</div>`)[0];
+                popup_c3e7cc86dc92799d89141249c0410d89.setContent(html_1780febb180b71cb944aa17368d2f3ce);
+            
+        
+
+        marker_8bce64a894ad994a369f6ff33544e698.bindPopup(popup_c3e7cc86dc92799d89141249c0410d89)
+        ;
+
+        
+    
+    
+            var marker_d9d93bf013ebcbde0c948f6642741c83 = L.marker(
+                [52.1141485, 4.4546127],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_161d9d8f9fbb8112ed103510d57b3480 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d9d93bf013ebcbde0c948f6642741c83.setIcon(icon_161d9d8f9fbb8112ed103510d57b3480);
+        
+    
+        var popup_095db5542c394e1194f7e739eb2fa5be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf4df85e9df7c1459de7928409bfb0b9 = $(`<div id="html_cf4df85e9df7c1459de7928409bfb0b9" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L5423638' target='_blank'>Vlietland</a><br>103</div>`)[0];
+                popup_095db5542c394e1194f7e739eb2fa5be.setContent(html_cf4df85e9df7c1459de7928409bfb0b9);
+            
+        
+
+        marker_d9d93bf013ebcbde0c948f6642741c83.bindPopup(popup_095db5542c394e1194f7e739eb2fa5be)
+        ;
+
+        
+    
+    
+            var marker_e9c9d1ceb42c674ae580aefc1c4ba7cb = L.marker(
+                [52.7287473, 4.6470281],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_0252967d012984f898b6d5dad949939f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e9c9d1ceb42c674ae580aefc1c4ba7cb.setIcon(icon_0252967d012984f898b6d5dad949939f);
+        
+    
+        var popup_22fa2219473cd792cfb82f9bc68d937f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06ffaa66027ed9317cf536a7191d1b8d = $(`<div id="html_06ffaa66027ed9317cf536a7191d1b8d" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L1781228' target='_blank'>Camperduin</a><br>102</div>`)[0];
+                popup_22fa2219473cd792cfb82f9bc68d937f.setContent(html_06ffaa66027ed9317cf536a7191d1b8d);
+            
+        
+
+        marker_e9c9d1ceb42c674ae580aefc1c4ba7cb.bindPopup(popup_22fa2219473cd792cfb82f9bc68d937f)
+        ;
+
+        
+    
+    
+            var marker_5fbe6746439617bf35e31c3b18e7bdd8 = L.marker(
+                [52.579193, 4.627571],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_96dae4af2cc9c072bbca86961080b558 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5fbe6746439617bf35e31c3b18e7bdd8.setIcon(icon_96dae4af2cc9c072bbca86961080b558);
+        
+    
+        var popup_eec36015eaca0572e2b88530c8964bab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0221f57100dca512b58dc21c692a9b91 = $(`<div id="html_0221f57100dca512b58dc21c692a9b91" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L9965309' target='_blank'>Noordhollands Duinreservaat--Vogelwater</a><br>101</div>`)[0];
+                popup_eec36015eaca0572e2b88530c8964bab.setContent(html_0221f57100dca512b58dc21c692a9b91);
+            
+        
+
+        marker_5fbe6746439617bf35e31c3b18e7bdd8.bindPopup(popup_eec36015eaca0572e2b88530c8964bab)
+        ;
+
+        
+    
+    
+            var marker_cedea0b0da062921833ce68da96306f2 = L.marker(
+                [52.119946, 4.2994308],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_7fed1eeb6c85d01869e4fe4b5f9ea77c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_cedea0b0da062921833ce68da96306f2.setIcon(icon_7fed1eeb6c85d01869e4fe4b5f9ea77c);
+        
+    
+        var popup_3e0b7bc1117889cab7034486975caf0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5f76b1f7e90bfb401df65246300fa7d = $(`<div id="html_d5f76b1f7e90bfb401df65246300fa7d" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L9927251' target='_blank'>Oostduinpark</a><br>101</div>`)[0];
+                popup_3e0b7bc1117889cab7034486975caf0e.setContent(html_d5f76b1f7e90bfb401df65246300fa7d);
+            
+        
+
+        marker_cedea0b0da062921833ce68da96306f2.bindPopup(popup_3e0b7bc1117889cab7034486975caf0e)
+        ;
+
+        
+    
+    
+            var marker_f7f040fcf988604af3f69b5dc0afdda4 = L.marker(
+                [51.9929337, 4.5604404],
+                {}
+            ).addTo(map_a38e04497a097380604c7518987d9855);
+        
+    
+            var icon_c2c69e87004589fbc998a58d675da707 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f7f040fcf988604af3f69b5dc0afdda4.setIcon(icon_c2c69e87004589fbc998a58d675da707);
+        
+    
+        var popup_75c6ae9ceba551169734844faf5869d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_843217445adeaa165494883d7f9ed0ea = $(`<div id="html_843217445adeaa165494883d7f9ed0ea" style="width: 100.0%; height: 100.0%;"><a href='https://ebird.org/hotspot/L16616671' target='_blank'>Zevenhuizen--Willem-Alexander roeibaan</a><br>101</div>`)[0];
+                popup_75c6ae9ceba551169734844faf5869d3.setContent(html_843217445adeaa165494883d7f9ed0ea);
+            
+        
+
+        marker_f7f040fcf988604af3f69b5dc0afdda4.bindPopup(popup_75c6ae9ceba551169734844faf5869d3)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,0 +1,4 @@
+- Check effects of arrivals volumes to price
+- check seasonality of crops
+- check major crops (filter for it)
+- check for primary growing areas for major crops 

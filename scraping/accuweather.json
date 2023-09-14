@@ -1,0 +1,1308 @@
+{
+    "Headline": {
+      "EffectiveDate": "2023-07-17T14:00:00+02:00",
+      "EffectiveEpochDate": 1689595200,
+      "Severity": 5,
+      "Text": "A thunderstorm Monday afternoon",
+      "Category": "thunderstorm",
+      "EndDate": "2023-07-17T20:00:00+02:00",
+      "EndEpochDate": 1689616800,
+      "MobileLink": "http://www.accuweather.com/en/nl/jordaan/872191/daily-weather-forecast/872191?unit=c&lang=en-us",
+      "Link": "http://www.accuweather.com/en/nl/jordaan/872191/daily-weather-forecast/872191?unit=c&lang=en-us"
+    },
+    "DailyForecasts": [
+      {
+        "Date": "2023-07-17T07:00:00+02:00",
+        "EpochDate": 1689570000,
+        "Sun": {
+          "Rise": "2023-07-17T05:38:00+02:00",
+          "EpochRise": 1689565080,
+          "Set": "2023-07-17T21:54:00+02:00",
+          "EpochSet": 1689623640
+        },
+        "Moon": {
+          "Rise": "2023-07-17T04:32:00+02:00",
+          "EpochRise": 1689561120,
+          "Set": "2023-07-17T22:29:00+02:00",
+          "EpochSet": 1689625740,
+          "Phase": "New",
+          "Age": 0
+        },
+        "Temperature": {
+          "Minimum": {
+            "Value": 13.9,
+            "Unit": "C",
+            "UnitType": 17
+          },
+          "Maximum": {
+            "Value": 18.9,
+            "Unit": "C",
+            "UnitType": 17
+          }
+        },
+        "RealFeelTemperature": {
+          "Minimum": {
+            "Value": 12.2,
+            "Unit": "C",
+            "UnitType": 17,
+            "Phrase": "Cool"
+          },
+          "Maximum": {
+            "Value": 18.3,
+            "Unit": "C",
+            "UnitType": 17,
+            "Phrase": "Pleasant"
+          }
+        },
+        "RealFeelTemperatureShade": {
+          "Minimum": {
+            "Value": 12.2,
+            "Unit": "C",
+            "UnitType": 17,
+            "Phrase": "Cool"
+          },
+          "Maximum": {
+            "Value": 17.2,
+            "Unit": "C",
+            "UnitType": 17,
+            "Phrase": "Pleasant"
+          }
+        },
+        "HoursOfSun": 2.1,
+        "DegreeDaySummary": {
+          "Heating": {
+            "Value": 2,
+            "Unit": "C",
+            "UnitType": 17
+          },
+          "Cooling": {
+            "Value": 0,
+            "Unit": "C",
+            "UnitType": 17
+          }
+        },
+        "AirAndPollen": [
+          {
+            "Name": "AirQuality",
+            "Value": 0,
+            "Category": "Good",
+            "CategoryValue": 1,
+            "Type": "Ozone"
+          },
+          {
+            "Name": "Grass",
+            "Value": 13,
+            "Category": "Moderate",
+            "CategoryValue": 2
+          },
+          {
+            "Name": "Mold",
+            "Value": 0,
+            "Category": "Low",
+            "CategoryValue": 1
+          },
+          {
+            "Name": "Tree",
+            "Value": 0,
+            "Category": "Low",
+            "CategoryValue": 1
+          },
+          {
+            "Name": "Ragweed",
+            "Value": 0,
+            "Category": "Low",
+            "CategoryValue": 1
+          },
+          {
+            "Name": "UVIndex",
+            "Value": 7,
+            "Category": "High",
+            "CategoryValue": 3
+          }
+        ],
+        "Day": {
+          "Icon": 16,
+          "IconPhrase": "Mostly cloudy w/ t-storms",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Moderate",
+          "ShortPhrase": "Breezy with variable clouds",
+          "LongPhrase": "Breezy with variable cloudiness",
+          "PrecipitationProbability": 88,
+          "ThunderstormProbability": 53,
+          "RainProbability": 88,
+          "SnowProbability": 0,
+          "IceProbability": 0,
+          "Wind": {
+            "Speed": {
+              "Value": 29,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 247,
+              "Localized": "WSW",
+              "English": "WSW"
+            }
+          },
+          "WindGust": {
+            "Speed": {
+              "Value": 48.3,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 247,
+              "Localized": "WSW",
+              "English": "WSW"
+            }
+          },
+          "TotalLiquid": {
+            "Value": 6.9,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Rain": {
+            "Value": 6.9,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Snow": {
+            "Value": 0,
+            "Unit": "cm",
+            "UnitType": 4
+          },
+          "Ice": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "HoursOfPrecipitation": 2.5,
+          "HoursOfRain": 2.5,
+          "HoursOfSnow": 0,
+          "HoursOfIce": 0,
+          "CloudCover": 74,
+          "Evapotranspiration": {
+            "Value": 2.5,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "SolarIrradiance": {
+            "Value": 5889.2,
+            "Unit": "W/m²",
+            "UnitType": 33
+          }
+        },
+        "Night": {
+          "Icon": 36,
+          "IconPhrase": "Intermittent clouds",
+          "HasPrecipitation": false,
+          "ShortPhrase": "Partly cloudy",
+          "LongPhrase": "Partly cloudy",
+          "PrecipitationProbability": 4,
+          "ThunderstormProbability": 0,
+          "RainProbability": 4,
+          "SnowProbability": 0,
+          "IceProbability": 0,
+          "Wind": {
+            "Speed": {
+              "Value": 14.5,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 220,
+              "Localized": "SW",
+              "English": "SW"
+            }
+          },
+          "WindGust": {
+            "Speed": {
+              "Value": 37,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 220,
+              "Localized": "SW",
+              "English": "SW"
+            }
+          },
+          "TotalLiquid": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Rain": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Snow": {
+            "Value": 0,
+            "Unit": "cm",
+            "UnitType": 4
+          },
+          "Ice": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "HoursOfPrecipitation": 0,
+          "HoursOfRain": 0,
+          "HoursOfSnow": 0,
+          "HoursOfIce": 0,
+          "CloudCover": 56,
+          "Evapotranspiration": {
+            "Value": 0.5,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "SolarIrradiance": {
+            "Value": 1085.6,
+            "Unit": "W/m²",
+            "UnitType": 33
+          }
+        },
+        "Sources": [
+          "AccuWeather"
+        ],
+        "MobileLink": "http://www.accuweather.com/en/nl/jordaan/872191/daily-weather-forecast/872191?day=1&unit=c&lang=en-us",
+        "Link": "http://www.accuweather.com/en/nl/jordaan/872191/daily-weather-forecast/872191?day=1&unit=c&lang=en-us"
+      },
+      {
+        "Date": "2023-07-18T07:00:00+02:00",
+        "EpochDate": 1689656400,
+        "Sun": {
+          "Rise": "2023-07-18T05:40:00+02:00",
+          "EpochRise": 1689651600,
+          "Set": "2023-07-18T21:53:00+02:00",
+          "EpochSet": 1689709980
+        },
+        "Moon": {
+          "Rise": "2023-07-18T05:40:00+02:00",
+          "EpochRise": 1689651600,
+          "Set": "2023-07-18T22:55:00+02:00",
+          "EpochSet": 1689713700,
+          "Phase": "WaxingCrescent",
+          "Age": 1
+        },
+        "Temperature": {
+          "Minimum": {
+            "Value": 13.9,
+            "Unit": "C",
+            "UnitType": 17
+          },
+          "Maximum": {
+            "Value": 22.8,
+            "Unit": "C",
+            "UnitType": 17
+          }
+        },
+        "RealFeelTemperature": {
+          "Minimum": {
+            "Value": 14.4,
+            "Unit": "C",
+            "UnitType": 17,
+            "Phrase": "Cool"
+          },
+          "Maximum": {
+            "Value": 24.4,
+            "Unit": "C",
+            "UnitType": 17,
+            "Phrase": "Pleasant"
+          }
+        },
+        "RealFeelTemperatureShade": {
+          "Minimum": {
+            "Value": 14.4,
+            "Unit": "C",
+            "UnitType": 17,
+            "Phrase": "Cool"
+          },
+          "Maximum": {
+            "Value": 21.1,
+            "Unit": "C",
+            "UnitType": 17,
+            "Phrase": "Pleasant"
+          }
+        },
+        "HoursOfSun": 3.6,
+        "DegreeDaySummary": {
+          "Heating": {
+            "Value": 0,
+            "Unit": "C",
+            "UnitType": 17
+          },
+          "Cooling": {
+            "Value": 0,
+            "Unit": "C",
+            "UnitType": 17
+          }
+        },
+        "AirAndPollen": [
+          {
+            "Name": "AirQuality",
+            "Value": 0,
+            "Category": "Good",
+            "CategoryValue": 1,
+            "Type": "Ozone"
+          },
+          {
+            "Name": "Grass",
+            "Value": 24,
+            "Category": "High",
+            "CategoryValue": 3
+          },
+          {
+            "Name": "Mold",
+            "Value": 300,
+            "Category": "Low",
+            "CategoryValue": 1
+          },
+          {
+            "Name": "Tree",
+            "Value": 0,
+            "Category": "Low",
+            "CategoryValue": 1
+          },
+          {
+            "Name": "Ragweed",
+            "Value": 0,
+            "Category": "Low",
+            "CategoryValue": 1
+          },
+          {
+            "Name": "UVIndex",
+            "Value": 7,
+            "Category": "High",
+            "CategoryValue": 3
+          }
+        ],
+        "Day": {
+          "Icon": 4,
+          "IconPhrase": "Intermittent clouds",
+          "HasPrecipitation": false,
+          "ShortPhrase": "Nice with clouds and sun",
+          "LongPhrase": "Nice with times of clouds and sun",
+          "PrecipitationProbability": 25,
+          "ThunderstormProbability": 0,
+          "RainProbability": 25,
+          "SnowProbability": 0,
+          "IceProbability": 0,
+          "Wind": {
+            "Speed": {
+              "Value": 16.1,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 257,
+              "Localized": "WSW",
+              "English": "WSW"
+            }
+          },
+          "WindGust": {
+            "Speed": {
+              "Value": 29,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 257,
+              "Localized": "WSW",
+              "English": "WSW"
+            }
+          },
+          "TotalLiquid": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Rain": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Snow": {
+            "Value": 0,
+            "Unit": "cm",
+            "UnitType": 4
+          },
+          "Ice": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "HoursOfPrecipitation": 0,
+          "HoursOfRain": 0,
+          "HoursOfSnow": 0,
+          "HoursOfIce": 0,
+          "CloudCover": 52,
+          "Evapotranspiration": {
+            "Value": 3.6,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "SolarIrradiance": {
+            "Value": 7675.1,
+            "Unit": "W/m²",
+            "UnitType": 33
+          }
+        },
+        "Night": {
+          "Icon": 36,
+          "IconPhrase": "Intermittent clouds",
+          "HasPrecipitation": false,
+          "ShortPhrase": "Partly cloudy",
+          "LongPhrase": "Partly cloudy",
+          "PrecipitationProbability": 25,
+          "ThunderstormProbability": 0,
+          "RainProbability": 25,
+          "SnowProbability": 0,
+          "IceProbability": 0,
+          "Wind": {
+            "Speed": {
+              "Value": 8,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 349,
+              "Localized": "N",
+              "English": "N"
+            }
+          },
+          "WindGust": {
+            "Speed": {
+              "Value": 22.5,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 349,
+              "Localized": "N",
+              "English": "N"
+            }
+          },
+          "TotalLiquid": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Rain": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Snow": {
+            "Value": 0,
+            "Unit": "cm",
+            "UnitType": 4
+          },
+          "Ice": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "HoursOfPrecipitation": 0,
+          "HoursOfRain": 0,
+          "HoursOfSnow": 0,
+          "HoursOfIce": 0,
+          "CloudCover": 66,
+          "Evapotranspiration": {
+            "Value": 0.5,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "SolarIrradiance": {
+            "Value": 798.7,
+            "Unit": "W/m²",
+            "UnitType": 33
+          }
+        },
+        "Sources": [
+          "AccuWeather"
+        ],
+        "MobileLink": "http://www.accuweather.com/en/nl/jordaan/872191/daily-weather-forecast/872191?day=2&unit=c&lang=en-us",
+        "Link": "http://www.accuweather.com/en/nl/jordaan/872191/daily-weather-forecast/872191?day=2&unit=c&lang=en-us"
+      },
+      {
+        "Date": "2023-07-19T07:00:00+02:00",
+        "EpochDate": 1689742800,
+        "Sun": {
+          "Rise": "2023-07-19T05:41:00+02:00",
+          "EpochRise": 1689738060,
+          "Set": "2023-07-19T21:52:00+02:00",
+          "EpochSet": 1689796320
+        },
+        "Moon": {
+          "Rise": "2023-07-19T06:53:00+02:00",
+          "EpochRise": 1689742380,
+          "Set": "2023-07-19T23:14:00+02:00",
+          "EpochSet": 1689801240,
+          "Phase": "WaxingCrescent",
+          "Age": 2
+        },
+        "Temperature": {
+          "Minimum": {
+            "Value": 11.7,
+            "Unit": "C",
+            "UnitType": 17
+          },
+          "Maximum": {
+            "Value": 20.6,
+            "Unit": "C",
+            "UnitType": 17
+          }
+        },
+        "RealFeelTemperature": {
+          "Minimum": {
+            "Value": 10.6,
+            "Unit": "C",
+            "UnitType": 17,
+            "Phrase": "Cool"
+          },
+          "Maximum": {
+            "Value": 21.1,
+            "Unit": "C",
+            "UnitType": 17,
+            "Phrase": "Pleasant"
+          }
+        },
+        "RealFeelTemperatureShade": {
+          "Minimum": {
+            "Value": 10.6,
+            "Unit": "C",
+            "UnitType": 17,
+            "Phrase": "Pleasant"
+          },
+          "Maximum": {
+            "Value": 18.3,
+            "Unit": "C",
+            "UnitType": 17,
+            "Phrase": "Pleasant"
+          }
+        },
+        "HoursOfSun": 2.7,
+        "DegreeDaySummary": {
+          "Heating": {
+            "Value": 2,
+            "Unit": "C",
+            "UnitType": 17
+          },
+          "Cooling": {
+            "Value": 0,
+            "Unit": "C",
+            "UnitType": 17
+          }
+        },
+        "AirAndPollen": [
+          {
+            "Name": "AirQuality",
+            "Value": 0,
+            "Category": "Good",
+            "CategoryValue": 1,
+            "Type": "Ozone"
+          },
+          {
+            "Name": "Grass",
+            "Value": 57,
+            "Category": "High",
+            "CategoryValue": 3
+          },
+          {
+            "Name": "Mold",
+            "Value": 405,
+            "Category": "Low",
+            "CategoryValue": 1
+          },
+          {
+            "Name": "Tree",
+            "Value": 418,
+            "Category": "High",
+            "CategoryValue": 3
+          },
+          {
+            "Name": "Ragweed",
+            "Value": 0,
+            "Category": "Low",
+            "CategoryValue": 1
+          },
+          {
+            "Name": "UVIndex",
+            "Value": 4,
+            "Category": "Moderate",
+            "CategoryValue": 2
+          }
+        ],
+        "Day": {
+          "Icon": 14,
+          "IconPhrase": "Partly sunny w/ showers",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Light",
+          "ShortPhrase": "A shower in the morning",
+          "LongPhrase": "A passing morning shower; otherwise, times of clouds and sun",
+          "PrecipitationProbability": 55,
+          "ThunderstormProbability": 11,
+          "RainProbability": 55,
+          "SnowProbability": 0,
+          "IceProbability": 0,
+          "Wind": {
+            "Speed": {
+              "Value": 16.1,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 301,
+              "Localized": "WNW",
+              "English": "WNW"
+            }
+          },
+          "WindGust": {
+            "Speed": {
+              "Value": 43.5,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 301,
+              "Localized": "WNW",
+              "English": "WNW"
+            }
+          },
+          "TotalLiquid": {
+            "Value": 0.5,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Rain": {
+            "Value": 0.5,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Snow": {
+            "Value": 0,
+            "Unit": "cm",
+            "UnitType": 4
+          },
+          "Ice": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "HoursOfPrecipitation": 0.5,
+          "HoursOfRain": 0.5,
+          "HoursOfSnow": 0,
+          "HoursOfIce": 0,
+          "CloudCover": 57,
+          "Evapotranspiration": {
+            "Value": 2.8,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "SolarIrradiance": {
+            "Value": 7032,
+            "Unit": "W/m²",
+            "UnitType": 33
+          }
+        },
+        "Night": {
+          "Icon": 34,
+          "IconPhrase": "Mostly clear",
+          "HasPrecipitation": false,
+          "ShortPhrase": "Mainly clear",
+          "LongPhrase": "Mainly clear",
+          "PrecipitationProbability": 8,
+          "ThunderstormProbability": 0,
+          "RainProbability": 8,
+          "SnowProbability": 0,
+          "IceProbability": 0,
+          "Wind": {
+            "Speed": {
+              "Value": 11.3,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 351,
+              "Localized": "N",
+              "English": "N"
+            }
+          },
+          "WindGust": {
+            "Speed": {
+              "Value": 35.4,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 351,
+              "Localized": "N",
+              "English": "N"
+            }
+          },
+          "TotalLiquid": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Rain": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Snow": {
+            "Value": 0,
+            "Unit": "cm",
+            "UnitType": 4
+          },
+          "Ice": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "HoursOfPrecipitation": 0,
+          "HoursOfRain": 0,
+          "HoursOfSnow": 0,
+          "HoursOfIce": 0,
+          "CloudCover": 25,
+          "Evapotranspiration": {
+            "Value": 0.3,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "SolarIrradiance": {
+            "Value": 1033.8,
+            "Unit": "W/m²",
+            "UnitType": 33
+          }
+        },
+        "Sources": [
+          "AccuWeather"
+        ],
+        "MobileLink": "http://www.accuweather.com/en/nl/jordaan/872191/daily-weather-forecast/872191?day=3&unit=c&lang=en-us",
+        "Link": "http://www.accuweather.com/en/nl/jordaan/872191/daily-weather-forecast/872191?day=3&unit=c&lang=en-us"
+      },
+      {
+        "Date": "2023-07-20T07:00:00+02:00",
+        "EpochDate": 1689829200,
+        "Sun": {
+          "Rise": "2023-07-20T05:42:00+02:00",
+          "EpochRise": 1689824520,
+          "Set": "2023-07-20T21:50:00+02:00",
+          "EpochSet": 1689882600
+        },
+        "Moon": {
+          "Rise": "2023-07-20T08:07:00+02:00",
+          "EpochRise": 1689833220,
+          "Set": "2023-07-20T23:28:00+02:00",
+          "EpochSet": 1689888480,
+          "Phase": "WaxingCrescent",
+          "Age": 3
+        },
+        "Temperature": {
+          "Minimum": {
+            "Value": 12.5,
+            "Unit": "C",
+            "UnitType": 17
+          },
+          "Maximum": {
+            "Value": 20.8,
+            "Unit": "C",
+            "UnitType": 17
+          }
+        },
+        "RealFeelTemperature": {
+          "Minimum": {
+            "Value": 11.8,
+            "Unit": "C",
+            "UnitType": 17,
+            "Phrase": "Cool"
+          },
+          "Maximum": {
+            "Value": 22,
+            "Unit": "C",
+            "UnitType": 17,
+            "Phrase": "Pleasant"
+          }
+        },
+        "RealFeelTemperatureShade": {
+          "Minimum": {
+            "Value": 11.8,
+            "Unit": "C",
+            "UnitType": 17,
+            "Phrase": "Cool"
+          },
+          "Maximum": {
+            "Value": 18.9,
+            "Unit": "C",
+            "UnitType": 17,
+            "Phrase": "Pleasant"
+          }
+        },
+        "HoursOfSun": 6.3,
+        "DegreeDaySummary": {
+          "Heating": {
+            "Value": 1,
+            "Unit": "C",
+            "UnitType": 17
+          },
+          "Cooling": {
+            "Value": 0,
+            "Unit": "C",
+            "UnitType": 17
+          }
+        },
+        "AirAndPollen": [
+          {
+            "Name": "AirQuality",
+            "Value": 0,
+            "Category": "Good",
+            "CategoryValue": 1,
+            "Type": "Ozone"
+          },
+          {
+            "Name": "Grass",
+            "Value": 146,
+            "Category": "High",
+            "CategoryValue": 3
+          },
+          {
+            "Name": "Mold",
+            "Value": 608,
+            "Category": "Low",
+            "CategoryValue": 1
+          },
+          {
+            "Name": "Ragweed",
+            "Value": 2,
+            "Category": "Low",
+            "CategoryValue": 1
+          },
+          {
+            "Name": "Tree",
+            "Value": 1267,
+            "Category": "High",
+            "CategoryValue": 3
+          },
+          {
+            "Name": "UVIndex",
+            "Value": 6,
+            "Category": "High",
+            "CategoryValue": 3
+          }
+        ],
+        "Day": {
+          "Icon": 4,
+          "IconPhrase": "Intermittent clouds",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Light",
+          "ShortPhrase": "A passing morning shower",
+          "LongPhrase": "A passing morning shower; otherwise, times of sun and clouds",
+          "PrecipitationProbability": 55,
+          "ThunderstormProbability": 11,
+          "RainProbability": 55,
+          "SnowProbability": 0,
+          "IceProbability": 0,
+          "Wind": {
+            "Speed": {
+              "Value": 13,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 296,
+              "Localized": "WNW",
+              "English": "WNW"
+            }
+          },
+          "WindGust": {
+            "Speed": {
+              "Value": 33.3,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 296,
+              "Localized": "WNW",
+              "English": "WNW"
+            }
+          },
+          "TotalLiquid": {
+            "Value": 0.5,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Rain": {
+            "Value": 0.5,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Snow": {
+            "Value": 0,
+            "Unit": "cm",
+            "UnitType": 4
+          },
+          "Ice": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "HoursOfPrecipitation": 0.5,
+          "HoursOfRain": 0.5,
+          "HoursOfSnow": 0,
+          "HoursOfIce": 0,
+          "CloudCover": 70,
+          "Evapotranspiration": {
+            "Value": 2.8,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "SolarIrradiance": {
+            "Value": 6036,
+            "Unit": "W/m²",
+            "UnitType": 33
+          }
+        },
+        "Night": {
+          "Icon": 34,
+          "IconPhrase": "Mostly clear",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Light",
+          "ShortPhrase": "Mainly clear, a shower late",
+          "LongPhrase": "Mainly clear with a shower in spots late",
+          "PrecipitationProbability": 55,
+          "ThunderstormProbability": 11,
+          "RainProbability": 55,
+          "SnowProbability": 0,
+          "IceProbability": 0,
+          "Wind": {
+            "Speed": {
+              "Value": 7.4,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 324,
+              "Localized": "NW",
+              "English": "NW"
+            }
+          },
+          "WindGust": {
+            "Speed": {
+              "Value": 25.9,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 310,
+              "Localized": "NW",
+              "English": "NW"
+            }
+          },
+          "TotalLiquid": {
+            "Value": 0.7,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Rain": {
+            "Value": 0.7,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Snow": {
+            "Value": 0,
+            "Unit": "cm",
+            "UnitType": 4
+          },
+          "Ice": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "HoursOfPrecipitation": 0.5,
+          "HoursOfRain": 0.5,
+          "HoursOfSnow": 0,
+          "HoursOfIce": 0,
+          "CloudCover": 28,
+          "Evapotranspiration": {
+            "Value": 0.3,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "SolarIrradiance": {
+            "Value": 469.4,
+            "Unit": "W/m²",
+            "UnitType": 33
+          }
+        },
+        "Sources": [
+          "AccuWeather"
+        ],
+        "MobileLink": "http://www.accuweather.com/en/nl/jordaan/872191/daily-weather-forecast/872191?day=4&unit=c&lang=en-us",
+        "Link": "http://www.accuweather.com/en/nl/jordaan/872191/daily-weather-forecast/872191?day=4&unit=c&lang=en-us"
+      },
+      {
+        "Date": "2023-07-21T07:00:00+02:00",
+        "EpochDate": 1689915600,
+        "Sun": {
+          "Rise": "2023-07-21T05:44:00+02:00",
+          "EpochRise": 1689911040,
+          "Set": "2023-07-21T21:49:00+02:00",
+          "EpochSet": 1689968940
+        },
+        "Moon": {
+          "Rise": "2023-07-21T09:20:00+02:00",
+          "EpochRise": 1689924000,
+          "Set": "2023-07-21T23:39:00+02:00",
+          "EpochSet": 1689975540,
+          "Phase": "WaxingCrescent",
+          "Age": 4
+        },
+        "Temperature": {
+          "Minimum": {
+            "Value": 12.6,
+            "Unit": "C",
+            "UnitType": 17
+          },
+          "Maximum": {
+            "Value": 20.9,
+            "Unit": "C",
+            "UnitType": 17
+          }
+        },
+        "RealFeelTemperature": {
+          "Minimum": {
+            "Value": 11,
+            "Unit": "C",
+            "UnitType": 17,
+            "Phrase": "Cool"
+          },
+          "Maximum": {
+            "Value": 21.9,
+            "Unit": "C",
+            "UnitType": 17,
+            "Phrase": "Pleasant"
+          }
+        },
+        "RealFeelTemperatureShade": {
+          "Minimum": {
+            "Value": 11,
+            "Unit": "C",
+            "UnitType": 17,
+            "Phrase": "Cool"
+          },
+          "Maximum": {
+            "Value": 19.1,
+            "Unit": "C",
+            "UnitType": 17,
+            "Phrase": "Pleasant"
+          }
+        },
+        "HoursOfSun": 9.1,
+        "DegreeDaySummary": {
+          "Heating": {
+            "Value": 1,
+            "Unit": "C",
+            "UnitType": 17
+          },
+          "Cooling": {
+            "Value": 0,
+            "Unit": "C",
+            "UnitType": 17
+          }
+        },
+        "AirAndPollen": [
+          {
+            "Name": "AirQuality",
+            "Value": 0,
+            "Category": "Good",
+            "CategoryValue": 1,
+            "Type": "Ozone"
+          },
+          {
+            "Name": "Grass",
+            "Value": 123,
+            "Category": "High",
+            "CategoryValue": 3
+          },
+          {
+            "Name": "Mold",
+            "Value": 912,
+            "Category": "Low",
+            "CategoryValue": 1
+          },
+          {
+            "Name": "Ragweed",
+            "Value": 2,
+            "Category": "Low",
+            "CategoryValue": 1
+          },
+          {
+            "Name": "Tree",
+            "Value": 1090,
+            "Category": "High",
+            "CategoryValue": 3
+          },
+          {
+            "Name": "UVIndex",
+            "Value": 6,
+            "Category": "High",
+            "CategoryValue": 3
+          }
+        ],
+        "Day": {
+          "Icon": 4,
+          "IconPhrase": "Intermittent clouds",
+          "HasPrecipitation": false,
+          "ShortPhrase": "Times of sun and clouds",
+          "LongPhrase": "Times of sun and clouds",
+          "PrecipitationProbability": 25,
+          "ThunderstormProbability": 5,
+          "RainProbability": 25,
+          "SnowProbability": 0,
+          "IceProbability": 0,
+          "Wind": {
+            "Speed": {
+              "Value": 14.8,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 303,
+              "Localized": "WNW",
+              "English": "WNW"
+            }
+          },
+          "WindGust": {
+            "Speed": {
+              "Value": 38.9,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 292,
+              "Localized": "WNW",
+              "English": "WNW"
+            }
+          },
+          "TotalLiquid": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Rain": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Snow": {
+            "Value": 0,
+            "Unit": "cm",
+            "UnitType": 4
+          },
+          "Ice": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "HoursOfPrecipitation": 0,
+          "HoursOfRain": 0,
+          "HoursOfSnow": 0,
+          "HoursOfIce": 0,
+          "CloudCover": 49,
+          "Evapotranspiration": {
+            "Value": 3,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "SolarIrradiance": {
+            "Value": 6338.2,
+            "Unit": "W/m²",
+            "UnitType": 33
+          }
+        },
+        "Night": {
+          "Icon": 34,
+          "IconPhrase": "Mostly clear",
+          "HasPrecipitation": false,
+          "ShortPhrase": "Mainly clear",
+          "LongPhrase": "Mainly clear",
+          "PrecipitationProbability": 8,
+          "ThunderstormProbability": 0,
+          "RainProbability": 8,
+          "SnowProbability": 0,
+          "IceProbability": 0,
+          "Wind": {
+            "Speed": {
+              "Value": 9.3,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 70,
+              "Localized": "ENE",
+              "English": "ENE"
+            }
+          },
+          "WindGust": {
+            "Speed": {
+              "Value": 25.9,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 305,
+              "Localized": "NW",
+              "English": "NW"
+            }
+          },
+          "TotalLiquid": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Rain": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Snow": {
+            "Value": 0,
+            "Unit": "cm",
+            "UnitType": 4
+          },
+          "Ice": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "HoursOfPrecipitation": 0,
+          "HoursOfRain": 0,
+          "HoursOfSnow": 0,
+          "HoursOfIce": 0,
+          "CloudCover": 49,
+          "Evapotranspiration": {
+            "Value": 0.3,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "SolarIrradiance": {
+            "Value": 538.3,
+            "Unit": "W/m²",
+            "UnitType": 33
+          }
+        },
+        "Sources": [
+          "AccuWeather"
+        ],
+        "MobileLink": "http://www.accuweather.com/en/nl/jordaan/872191/daily-weather-forecast/872191?day=5&unit=c&lang=en-us",
+        "Link": "http://www.accuweather.com/en/nl/jordaan/872191/daily-weather-forecast/872191?day=5&unit=c&lang=en-us"
+      }
+    ]
+  }

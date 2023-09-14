@@ -1,5 +1,7 @@
 # Ignore everything except .ipynb and .py files
-*
-!*.ipynb
-!*.py
-!.gitignore
+*.wav
+*.pdf
+*.zip
+*.xlsx
+.DS_Store
+sideProjects/data/SHF/PDC
