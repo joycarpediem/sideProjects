@@ -5,3 +5,4 @@
 *.xlsx
 .DS_Store
 sideProjects/data/SHF/PDC
+.env
